@@ -1,0 +1,1288 @@
+```html
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>জিএসটি (গুচ্ছ) সি-ইউনিট ভর্তি পরীক্ষা ২০২৬–২০২৭: সম্পূর্ণ এ-টু-জেড গবেষণা ও প্রস্তুতি নির্দেশিকা</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+Bengali:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /*
+     * Design Decision:
+     * Tier 3 · Utilitarian / Deep Research (Bangla Academic Strategy Encyclopedia)
+     * Hero: Answer-first compact editorial opening with single emphasis metric (20 March 2027)
+     * Section order: Verdict & Methodology -> Part 1 System -> Part 2 Syllabus -> Part 3 Historical GST ->
+     *                Part 4 Pre-GST Univs -> Part 5 Question Setters -> Part 6 Statistics ->
+     *                Part 7 Priority A-D -> Part 8 Hidden Patterns -> Part 9 2026-27 Forecast ->
+     *                Part 10 Preparation Strategy -> Part 11 Master Revision -> Sources
+     * Fonts: Hind Siliguri (headline & body) + Noto Serif Bengali (pull quotes/callouts) + IBM Plex Mono (numeric values & chart ticks)
+     * Palette: Crisp gallery white (#FFFFFF), deep ink (#111827), cobalt accent (#1D4ED8 / #1E3A8A), teal secondary (#0F766E / #115E59)
+     * Image radius: 0px (no photos; SVG charts & open editorial geometry)
+     * Emphasis moment: Single oversized numeral hero metric (20 March 2027 & 70% Core Weight)
+     * Signature element: Full-bleed dark analytical verdict band separating research from strategy
+     * Chart types: (1) Step-line university count chart, (2) 100% stacked marks evolution bars, (3) 2025-26 funnel/outcome horizontal bar chart
+     */
+    :root {
+      --paper: #FFFFFF;
+      --ink: #111827;
+      --ink2: #1F2937;
+      --mute: #4B5563;
+      --hair: #D1D5DB;
+      --accent: #1D4ED8;
+      --accent-text: #1E3A8A;
+      --accent-2: #0F766E;
+      --accent-2-text: #115E59;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: 'Hind Siliguri', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 17px;
+      line-height: 1.78;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      padding: 64px clamp(24px, 8.5vw, 108px) 92px;
+      max-width: 100%;
+    }
+
+    .grid-12 {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .col-12 { grid-column: span 12; }
+    .col-8 { grid-column: span 8; }
+    .col-7 { grid-column: span 7; }
+    .col-6 { grid-column: span 6; }
+    .col-5 { grid-column: span 5; }
+    .col-4 { grid-column: span 4; }
+    .col-3 { grid-column: span 3; }
+
+    .measure {
+      max-width: 68ch;
+    }
+
+    h1 {
+      font-family: 'Hind Siliguri', sans-serif;
+      font-size: clamp(36px, 4.4vw, 54px);
+      line-height: 1.18;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin: 0 0 18px;
+      text-wrap: balance;
+    }
+
+    .deck {
+      font-size: 19px;
+      line-height: 1.65;
+      color: var(--ink2);
+      margin: 0 0 28px;
+      max-width: 66ch;
+    }
+
+    h2 {
+      font-family: 'Hind Siliguri', sans-serif;
+      font-size: clamp(24px, 2.5vw, 31px);
+      line-height: 1.28;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      color: var(--ink);
+      margin: 0 0 18px;
+      text-wrap: balance;
+    }
+
+    h3 {
+      font-family: 'Hind Siliguri', sans-serif;
+      font-size: 20px;
+      line-height: 1.38;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 26px 0 10px;
+    }
+
+    h4 {
+      font-family: 'Hind Siliguri', sans-serif;
+      font-size: 17px;
+      line-height: 1.4;
+      font-weight: 700;
+      color: var(--accent-text);
+      margin: 18px 0 8px;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--ink2);
+    }
+
+    a {
+      color: var(--accent-text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    ul, ol {
+      margin: 0 0 18px;
+      padding-left: 22px;
+      color: var(--ink2);
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: var(--ink);
+    }
+
+    .sec {
+      margin-top: 66px;
+      padding-top: 28px;
+      border-top: 1px solid var(--hair);
+    }
+
+    .sec-first {
+      margin-top: 40px;
+      padding-top: 28px;
+      border-top: 2px solid var(--ink);
+    }
+
+    /* Single Emphasis Moment in Hero */
+    .hero-split {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 24px;
+      align-items: end;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--hair);
+    }
+
+    .hero-numeral-block {
+      border-left: 3px solid var(--accent);
+      padding-left: 20px;
+    }
+
+    .hero-numeral {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: clamp(44px, 5vw, 66px);
+      line-height: 1.05;
+      font-weight: 600;
+      color: var(--accent-text);
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+
+    .hero-numeral-sub {
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--mute);
+      margin-top: 8px;
+    }
+
+    /* Open Multi-Column Strips (0 cards) */
+    .strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 24px;
+      margin: 24px 0 28px;
+    }
+
+    .strip-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      margin: 24px 0 28px;
+    }
+
+    .strip-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+      margin: 24px 0 28px;
+    }
+
+    .strip-item {
+      border-top: 1px solid var(--hair);
+      padding-top: 14px;
+    }
+
+    .strip-item-accent {
+      border-top: 2px solid var(--accent);
+      padding-top: 14px;
+    }
+
+    .strip-item-teal {
+      border-top: 2px solid var(--accent-2);
+      padding-top: 14px;
+    }
+
+    .metric-val {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 26px;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
+    .metric-label {
+      font-size: 14px;
+      color: var(--mute);
+      margin-top: 4px;
+      line-height: 1.45;
+    }
+
+    .mono {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.9em;
+      white-space: nowrap;
+    }
+
+    /* Hairline List / Pseudo-table rows (open layout, not <table>) */
+    .data-row-list {
+      margin: 20px 0 28px;
+      border-top: 2px solid var(--ink);
+    }
+
+    .data-row {
+      display: grid;
+      grid-template-columns: 160px 1fr 180px;
+      gap: 18px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--hair);
+      align-items: baseline;
+    }
+
+    .data-row-4 {
+      display: grid;
+      grid-template-columns: 120px 180px 1fr 140px;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--hair);
+      align-items: baseline;
+    }
+
+    .data-head {
+      font-family: 'IBM Plex Mono', 'Hind Siliguri', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--mute);
+      border-bottom: 1px solid var(--ink);
+      padding: 10px 0;
+    }
+
+    /* Open Tables (strictly max 3 in document) */
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 24px 0 28px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+      line-height: 1.55;
+      color: var(--ink2);
+    }
+
+    thead th {
+      text-align: left;
+      font-family: 'Hind Siliguri', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ink);
+      padding: 10px 12px 10px 0;
+      border-top: 2px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      vertical-align: bottom;
+    }
+
+    tbody td {
+      padding: 11px 12px 11px 0;
+      border-bottom: 1px solid var(--hair);
+      vertical-align: top;
+    }
+
+    td.num, th.num {
+      font-family: 'IBM Plex Mono', monospace;
+      white-space: nowrap;
+      font-size: 14px;
+    }
+
+    /* Pull Quote / Editorial Callout */
+    .pull-quote {
+      font-family: 'Noto Serif Bengali', Georgia, serif;
+      font-size: clamp(22px, 2.4vw, 30px);
+      line-height: 1.5;
+      font-weight: 600;
+      color: var(--ink);
+      border-left: 3px solid var(--accent-2);
+      padding: 6px 0 6px 24px;
+      margin: 34px 0;
+      max-width: 58ch;
+    }
+
+    .pull-quote cite {
+      display: block;
+      font-family: 'Hind Siliguri', sans-serif;
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--mute);
+      margin-top: 10px;
+    }
+
+    /* Full-bleed Band (strictly max 1 in document) */
+    .full-bleed-band {
+      margin: 68px calc(clamp(24px, 8.5vw, 108px) * -1);
+      padding: 52px clamp(24px, 8.5vw, 108px);
+      background-color: #0F172A;
+      color: #F9FAFB;
+    }
+
+    .full-bleed-band h2,
+    .full-bleed-band h3,
+    .full-bleed-band strong {
+      color: #FFFFFF;
+    }
+
+    .full-bleed-band p,
+    .full-bleed-band li {
+      color: #E5E7EB;
+    }
+
+    .full-bleed-band a {
+      color: #93C5FD;
+    }
+
+    .full-bleed-band .strip-item {
+      border-top-color: #334155;
+    }
+
+    .full-bleed-band .metric-val {
+      color: #93C5FD;
+    }
+
+    .full-bleed-band .metric-label {
+      color: #CBD5E1;
+    }
+
+    /* Figures & Inline SVG Charts */
+    figure {
+      margin: 32px 0 36px;
+      padding: 0;
+    }
+
+    .fig-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 0 0 12px;
+      line-height: 1.4;
+    }
+
+    figcaption {
+      font-size: 13px;
+      color: var(--mute);
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    svg.chart {
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: visible;
+    }
+
+    /* Priority inline tags (no box chrome, typographic accent only) */
+    .prio-a { color: #991B1B; font-weight: 700; }
+    .prio-b { color: var(--accent-text); font-weight: 700; }
+    .prio-c { color: var(--accent-2-text); font-weight: 700; }
+    .prio-d { color: var(--mute); font-weight: 600; }
+
+    /* Verified Q&A Example Strip */
+    .qa-item {
+      border-left: 2px solid var(--hair);
+      padding-left: 16px;
+      margin-bottom: 18px;
+    }
+
+    .qa-q {
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .qa-a {
+      font-size: 15.5px;
+      color: var(--ink2);
+      margin-bottom: 0;
+    }
+
+    /* Table of Contents (open horizontal list) */
+    .toc {
+      margin: 24px 0 10px;
+      padding: 16px 0;
+      border-top: 1px solid var(--hair);
+      border-bottom: 1px solid var(--hair);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      font-size: 15px;
+    }
+
+    .toc a {
+      text-decoration: none;
+      color: var(--accent-text);
+      font-weight: 500;
+    }
+
+    .toc a:hover {
+      text-decoration: underline;
+    }
+
+    .sources-list {
+      columns: 2;
+      column-gap: 36px;
+      font-size: 14.5px;
+      line-height: 1.6;
+    }
+
+    .sources-list li {
+      break-inside: avoid;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-split, .grid-12, .strip, .strip-3, .strip-2 {
+        grid-template-columns: 1fr;
+      }
+      .col-8, .col-7, .col-6, .col-5, .col-4, .col-3 {
+        grid-column: span 12;
+      }
+      .data-row, .data-row-4 {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+      .data-head {
+        display: none;
+      }
+      .sources-list {
+        columns: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <!-- HERO: Answer-First Opening + Single Emphasis Numeral -->
+    <header class="hero-split">
+      <div class="col-8">
+        <h1>জিএসটি (গুচ্ছ) সি-ইউনিট ২০২৬–২৭: ৭০% নম্বর হিসাববিজ্ঞান ও ব্যবস্থাপনায়, আর এবার পরীক্ষা ফুল সিলেবাসে</h1>
+        <p class="deck">২০২৬–২৭ শিক্ষাবর্ষের গুচ্ছ সি-ইউনিট (বাণিজ্য অনুষদ) ভর্তি পরীক্ষা নির্ধারিত হয়েছে <strong>শনিবার, ২০ মার্চ ২০২৭</strong> সকাল ১১টা থেকে দুপুর ১২টা। পাঁচ বছর পর এইচএসসি ২০২৬ ব্যাচ পূর্ণাঙ্গ (Full) এনসিটিবি সিলেবাসে ফেরায় এবং গুচ্ছভুক্ত বিশ্ববিদ্যালয় ২৩টিতে উন্নীত হওয়ায় এবারের প্রস্তুতি কৌশলে বড় পরিবর্তন আনতে হবে।</p>
+      </div>
+      <div class="col-4 hero-numeral-block">
+        <div class="hero-numeral">20 MAR 2027</div>
+        <div class="hero-numeral-sub">২০২৬–২৭ জিএসটি সি-ইউনিট পরীক্ষার ঘোষিত তারিখ (সকাল ১১:০০–১২:০০)। তথ্য হালনাগাদ: ২৫ নভেম্বর ২০২৬।</div>
+      </div>
+    </header>
+
+    <!-- Quick Navigation -->
+    <nav class="toc" aria-label="প্রতিবেদনের সূচিপত্র">
+      <a href="#methodology">গবেষণা পদ্ধতি</a>
+      <a href="#part1">১. গুচ্ছ ব্যবস্থা ও ২০২৬–২৭ আপডেট</a>
+      <a href="#part2">২. সম্পূর্ণ সিলেবাস</a>
+      <a href="#part3">৩. বিগত জিএসটি প্রশ্ন বিশ্লেষণ</a>
+      <a href="#part4">৪. গুচ্ছ-পূর্ব বিশ্ববিদ্যালয় প্যাটার্ন</a>
+      <a href="#part5">৫. প্রশ্নপ্রণেতা ও কমিটি</a>
+      <a href="#part6">৬. বিষয়ভিত্তিক পরিসংখ্যান</a>
+      <a href="#part7">৭. প্রায়োরিটি এ–ডি তালিকা</a>
+      <a href="#part8">৮. লুকানো প্রবণতা ও ফাঁদ</a>
+      <a href="#part9">৯. ২০২৬–২৭ পূর্বাভাস</a>
+      <a href="#part10">১০. ১৬ সপ্তাহের প্রস্তুতি কৌশল</a>
+      <a href="#part11">১১. চূড়ান্ত মাস্টার রিভিশন</a>
+      <a href="#sources">তথ্যসূত্র</a>
+    </nav>
+
+    <!-- RESEARCH METHODOLOGY & SOURCE VERIFICATION -->
+    <section id="methodology" class="sec-first">
+      <div class="grid-12">
+        <div class="col-4">
+          <h2>গবেষণা পদ্ধতি ও তথ্য যাচাইয়ের স্বচ্ছতা</h2>
+        </div>
+        <div class="col-8 measure">
+          <p>একজন ভর্তিচ্ছুর জন্য সবচেয়ে ক্ষতিকর হলো কোচিং-নির্ভর অনুমান বা গুজবের ওপর ভর করে প্রস্তুতি নেওয়া। তাই এই গবেষণায় আমরা সরকারি শিক্ষা পোর্টাল (<a href="https://www.teachers.gov.bd/blog/details/854039" target="_blank" rel="noopener noreferrer">শিক্ষক বাতায়ন</a>), প্রথম সারির জাতীয় দৈনিক (<a href="https://www.prothomalo.com/education/admission/q8vei5aecd" target="_blank" rel="noopener noreferrer">প্রথম আলো</a>, <a href="https://bangla.dhakatribune.com/education/113088/%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A6%AD%E0%A7%81%E0%A6%95%E0%A7%8D%E0%A6%A4-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F%E0%A7%87-%E0%A6%86%E0%A6%B8%E0%A6%A8-%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE-%E0%A6%AC%E0%A6%BE%E0%A7%9C%E0%A6%9B%E0%A7%87" target="_blank" rel="noopener noreferrer">ঢাকা ট্রিবিউন</a>, <a href="https://www.kalerkantho.com/print-edition/first-page/2026/11/03/1761973" target="_blank" rel="noopener noreferrer">কালের কণ্ঠ</a>, <a href="https://www.thedailystar.net/frontpage/news/19-univs-now-set-uniform-tests-2014109" target="_blank" rel="noopener noreferrer">দ্য ডেইলি স্টার</a>), বিশ্ববিদ্যালয়ের মূল ভর্তি বিজ্ঞপ্তি এবং সংরক্ষিত আসল প্রশ্নব্যাংক (<a href="https://sattacademy.com/admission/gucch-biswbidzalygst" target="_blank" rel="noopener noreferrer">স্যাট একাডেমি</a> ও <a href="https://chorcha.net/question-bank/gst-c-unit-question-bank" target="_blank" rel="noopener noreferrer">চর্চা</a>) থেকে তথ্য যাচাই করেছি।</p>
+          <p><strong>সীমাবদ্ধতার স্পষ্ট স্বীকারোক্তি (২৫ নভেম্বর ২০২৬ পর্যন্ত):</strong> ২০২৬–২৭ শিক্ষাবর্ষের পরীক্ষার তারিখ (২০ মার্চ ২০২৭), নেতৃত্বদানকারী বিশ্ববিদ্যালয় (পবিপ্রবি ও নোবিপ্রবি) এবং নতুন যুক্ত বিশ্ববিদ্যালয়গুলোর তথ্য আনুষ্ঠানিকভাবে নিশ্চিত হয়েছে; তবে <strong>পূর্ণাঙ্গ আবেদন বিজ্ঞপ্তি (Circular)</strong>—যার মধ্যে চূড়ান্ত জিপিএ শর্ত, আবেদন ফি ও আবেদনের তারিখ থাকবে—এখনও প্রকাশিত হয়নি (<a href="https://www.teachers.gov.bd/blog/details/854039" target="_blank" rel="noopener noreferrer">শিক্ষক বাতায়ন</a>)। এছাড়া, ২০২০–২১ থেকে ২০২৫–২৬ পর্যন্ত ছয়টি শিক্ষাবর্ষের সব কটি ১০০ প্রশ্নের সম্পূর্ণ সেট উন্মুক্ত অনলাইন আর্কাইভে এককভাবে পাওয়া যায়নি; তাই যেখানে সম্পূর্ণ অধ্যায়ভিত্তিক শতকরা হার যাচাই করা যায়নি, সেখানে কোনো কাল্পনিক সংখ্যা বসানো হয়নি—শুধু যাচাইকৃত মূল প্রশ্ন ও নিশ্চিত ধারাগুলোই তুলে ধরা হয়েছে।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 1: COMPLETE GST ADMISSION SYSTEM ANALYSIS -->
+    <section id="part1" class="sec">
+      <h2>গুচ্ছ ভর্তি ব্যবস্থার পূর্ণাঙ্গ ব্যবচ্ছেদ: ইতিহাস থেকে ২০২৬–২৭ আপডেট</h2>
+
+      <div class="measure">
+        <p><strong>জিএসটি (GST — General, Science and Technology)</strong> হলো বাংলাদেশের সাধারণ এবং বিজ্ঞান ও প্রযুক্তি পাবলিক বিশ্ববিদ্যালয়গুলোর একটি সমন্বিত স্নাতক (সম্মান) ভর্তি পরীক্ষা ব্যবস্থা (<a href="https://bn.wikipedia.org/wiki/%E0%A6%9C%E0%A6%BF%E0%A6%8F%E0%A6%B8%E0%A6%9F%E0%A6%BF_%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B_%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A6%AF%E0%A6%BC_%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF_%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE" target="_blank" rel="noopener noreferrer">বাংলা উইকিপিডিয়া</a>)। ২০২০–২১ শিক্ষাবর্ষের আগে একজন শিক্ষার্থীকে প্রতিটি বিশ্ববিদ্যালয়ের জন্য আলাদা ফর্ম তুলতে হতো এবং দেশের এক প্রান্ত থেকে অন্য প্রান্তে (কুষ্টিয়া, খুলনা, বরিশাল, রংপুর, সিলেট, নোয়াখালী) ঘুরে ঘুরে পরীক্ষা দিতে হতো। এই আর্থিক ব্যয়, ভ্রমণভোগান্তি ও মানসিক চাপ কমাতে বাংলাদেশ বিশ্ববিদ্যালয় মঞ্জুরি কমিশন (ইউজিসি) ও উপাচার্যদের সিদ্ধান্তে ১৯ ডিসেম্বর ২০২০ তারিখে ২০টি বিশ্ববিদ্যালয় নিয়ে জিএসটি গুচ্ছের যাত্রা শুরু হয় (<a href="https://www.prothomalo.com/education/admission/%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B-%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A6%B6%E0%A7%81%E0%A6%B0%E0%A7%81-%E0%A7%A7%E0%A7%AD-%E0%A6%85%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A7%8B%E0%A6%AC%E0%A6%B0" target="_blank" rel="noopener noreferrer">প্রথম আলো</a>)। তবে স্বায়ত্তশাসিত চারটি বড় বিশ্ববিদ্যালয়—ঢাকা, রাজশাহী, চট্টগ্রাম ও জাহাঙ্গীরনগর বিশ্ববিদ্যালয় এবং বুয়েট—শুরু থেকেই এই গুচ্ছের বাইরে থেকেছে (<a href="https://www.kalerkantho.com/print-edition/first-page/2026/11/03/1761973" target="_blank" rel="noopener noreferrer">কালের কণ্ঠ</a>)।</p>
+      </div>
+
+      <!-- CHART 1: University Count Evolution SVG -->
+      <figure>
+        <div class="fig-title">পাঁচটি বড় বিশ্ববিদ্যালয় বেরিয়ে যাওয়ার পরও ২০২৬–২৭ সেশনে গুচ্ছভুক্ত বিশ্ববিদ্যালয় আবার ২৩টিতে পৌঁছেছে</div>
+        <svg class="chart" viewBox="0 0 700 380" width="100%" role="img" aria-label="২০২০-২১ থেকে ২০২৬-২৭ পর্যন্ত জিএসটি গুচ্ছভুক্ত বিশ্ববিদ্যালয়ের সংখ্যার রেখাচিত্র">
+          <!-- Gridlines -->
+          <line x1="72" y1="50" x2="660" y2="50" stroke="#E5E7EB" stroke-width="1" />
+          <line x1="72" y1="115" x2="660" y2="115" stroke="#E5E7EB" stroke-width="1" />
+          <line x1="72" y1="180" x2="660" y2="180" stroke="#E5E7EB" stroke-width="1" />
+          <line x1="72" y1="245" x2="660" y2="245" stroke="#E5E7EB" stroke-width="1" />
+          <line x1="72" y1="310" x2="660" y2="310" stroke="#9CA3AF" stroke-width="1.2" />
+
+          <!-- Y-axis ticks (15 to 27 range: y = 310 - (val-15)*21.67) -->
+          <text x="60" y="55" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="13" fill="#4B5563">27</text>
+          <text x="60" y="120" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="13" fill="#4B5563">24</text>
+          <text x="60" y="185" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="13" fill="#4B5563">21</text>
+          <text x="60" y="250" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="13" fill="#4B5563">18</text>
+          <text x="60" y="315" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="13" fill="#4B5563">15</text>
+
+          <!-- Y-axis title -->
+          <text x="20" y="180" text-anchor="middle" transform="rotate(-90 20 180)" font-family="Hind Siliguri, sans-serif" font-size="13" fill="#4B5563">বিশ্ববিদ্যালয়ের সংখ্যা</text>
+
+          <!-- Data Line: 20(202), 22(158), 22(158), 24(115), 19(223), 20(202), 23(137) -->
+          <!-- X positions: 105, 192, 279, 366, 453, 540, 627 -->
+          <polyline fill="none" stroke="#1D4ED8" stroke-width="3" points="105,202 192,158 279,158 366,115 453,223 540,202 627,137" />
+
+          <!-- Data Points -->
+          <circle cx="105" cy="202" r="5.5" fill="#1D4ED8" />
+          <circle cx="192" cy="158" r="5.5" fill="#1D4ED8" />
+          <circle cx="279" cy="158" r="5.5" fill="#1D4ED8" />
+          <circle cx="366" cy="115" r="6" fill="#0F766E" />
+          <circle cx="453" cy="223" r="6" fill="#991B1B" />
+          <circle cx="540" cy="202" r="5.5" fill="#1D4ED8" />
+          <circle cx="627" cy="137" r="6.5" fill="#1D4ED8" stroke="#FFFFFF" stroke-width="2" />
+
+          <!-- Direct Value Labels -->
+          <text x="105" y="186" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="#111827">20</text>
+          <text x="192" y="142" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="#111827">22</text>
+          <text x="279" y="142" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="#111827">22</text>
+          <text x="366" y="96" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="700" fill="#115E59">24 (সর্বোচ্চ)</text>
+          <text x="453" y="250" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="700" fill="#991B1B">19 (৫টি ত্যাগ)</text>
+          <text x="540" y="186" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="#111827">20</text>
+          <text x="627" y="116" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="700" fill="#1E3A8A">23*</text>
+
+          <!-- X-axis labels -->
+          <text x="105" y="335" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#4B5563">2020-21</text>
+          <text x="192" y="335" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#4B5563">2021-22</text>
+          <text x="279" y="335" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#4B5563">2022-23</text>
+          <text x="366" y="335" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#4B5563">2023-24</text>
+          <text x="453" y="335" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#4B5563">2024-25</text>
+          <text x="540" y="335" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#4B5563">2025-26</text>
+          <text x="627" y="335" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="600" fill="#1E3A8A">2026-27</text>
+        </svg>
+        <figcaption>*২১ নভেম্বর ২০২৬ পর্যন্ত ২৩টি বিশ্ববিদ্যালয় চূড়ান্ত (বগুড়া, ঠাকুরগাঁও ও মেহেরপুর যুক্ত); লক্ষ্মীপুর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ইউজিসি অনুমোদন সাপেক্ষে যুক্ত হলে সংখ্যা ২৪ হতে পারে। সূত্র: প্রথম আলো, ঢাকা ডায়েরি, বাংলা ঢাকা ট্রিবিউন ও বাংলা উইকিপিডিয়া।</figcaption>
+      </figure>
+
+      <!-- TABLE 1 (Table 1 of 3): Year-by-year GST Evolution -->
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>শিক্ষাবর্ষ</th>
+              <th class="num">বিশ্ববিদ্যালয়</th>
+              <th class="num">সি-ইউনিট আবেদনকারী</th>
+              <th>সি-ইউনিট পরীক্ষার তারিখ</th>
+              <th>উল্লেখযোগ্য পরিবর্তন ও নেতৃত্ব</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">২০২০–২১</td>
+              <td class="num">২০টি</td>
+              <td class="num">৩৩,৪৩৭</td>
+              <td>১ নভেম্বর ২০২১</td>
+              <td>গুচ্ছের সূচনা; সি-ইউনিটে আইসিটি (২৫ নম্বর) অন্তর্ভুক্ত ছিল (<a href="https://www.prothomalo.com/education/admission/%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B-%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A6%B6%E0%A7%81%E0%A6%B0%E0%A7%81-%E0%A7%A7%E0%A7%AD-%E0%A6%85%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A7%8B%E0%A6%AC%E0%A6%B0" target="_blank" rel="noopener noreferrer">প্রথম আলো</a>)।</td>
+            </tr>
+            <tr>
+              <td class="num">২০২১–২২</td>
+              <td class="num">২২টি</td>
+              <td class="num">যাচাইকৃত পাস ৫৯.৪৫%</td>
+              <td>২০ আগস্ট ২০২২</td>
+              <td>কিশোরগঞ্জ ও চাঁদপুর বিপ্রবি যুক্ত; আইসিটি বাদ দিয়ে ৩৫/৩৫/১৫/১৫ মানবণ্টন স্থায়ী হয় (<a href="https://bn.wikipedia.org/wiki/%E0%A6%9C%E0%A6%BF%E0%A6%8F%E0%A6%B8%E0%A6%9F%E0%A6%BF_%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B_%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A6%AF%E0%A6%BC_%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF_%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE" target="_blank" rel="noopener noreferrer">উইকিপিডিয়া</a>)।</td>
+            </tr>
+            <tr>
+              <td class="num">২০২২–২৩</td>
+              <td class="num">২২টি</td>
+              <td class="num">৩৯,৮৬৫</td>
+              <td>২৭ মে ২০২৩</td>
+              <td>শর্ট সিলেবাসে পরীক্ষা; মোট আবেদনকারী ৩,০৩,২৩১ জন (<a href="https://sattacademy.com/c-unit-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A6%BE-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%A8-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%A9-27-05-2023/all/mcq-questions" target="_blank" rel="noopener noreferrer">স্যাট একাডেমি</a>)।</td>
+            </tr>
+            <tr>
+              <td class="num">২০২৩–২৪</td>
+              <td class="num">২৪টি</td>
+              <td class="num">৪০,১১৬</td>
+              <td>১০ মে ২০২৪</td>
+              <td>সুনামগঞ্জ ও পিরোজপুর বিপ্রবি যুক্ত; নেতৃত্বে যবিপ্রবি (JUST) (<a href="https://www.prothomalo.com/education/admission/2qwmpke3xx" target="_blank" rel="noopener noreferrer">প্রথম আলো</a>)।</td>
+            </tr>
+            <tr>
+              <td class="num">২০২৪–২৫</td>
+              <td class="num">১৯টি</td>
+              <td class="num">মোট ২,৩৭,৭৮৭</td>
+              <td>২৫ এপ্রিল ২০২৫</td>
+              <td>৫টি বিশ্ববিদ্যালয় (জবি, শাবিপ্রবি, খুবি, হাবিপ্রবি, কুবি) গুচ্ছ ত্যাগ করে; নেতৃত্বে মাভাবিপ্রবি (<a href="https://www.prothomalo.com/education/admission/8io4yd4oio" target="_blank" rel="noopener noreferrer">প্রথম আলো</a>)।</td>
+            </tr>
+            <tr>
+              <td class="num">২০২৫–২৬</td>
+              <td class="num">২০টি</td>
+              <td class="num">২৫,২১৬</td>
+              <td>২৭ মার্চ ২০২৬</td>
+              <td>নওগাঁ বিশ্ববিদ্যালয় যুক্ত; পাসের হার ৬৬.৫০%, সর্বোচ্চ নম্বর ৮৫ (<a href="https://www.dainikshiksha.com/bn/news/cluster-c-unit-results-announced-366674" target="_blank" rel="noopener noreferrer">দৈনিক শিক্ষা</a>; <a href="https://dailyasianage.com/news/349789/gst-c-unit-result-published" target="_blank" rel="noopener noreferrer">দ্য এশিয়ান এজ</a>)।</td>
+            </tr>
+            <tr>
+              <td class="num"><strong>২০২৬–২৭</strong></td>
+              <td class="num"><strong>২৩টি*</strong></td>
+              <td class="num">বিজ্ঞপ্তি প্রক্রিয়াধীন</td>
+              <td><strong>২০ মার্চ ২০২৭</strong></td>
+              <td>নেতৃত্বে পবিপ্রবি (আহ্বায়ক) ও নোবিপ্রবি (সহ-আহ্বায়ক); স্থাপত্যের জন্য আলাদা ‘ডি’ ইউনিট; বগুড়া, ঠাকুরগাঁও ও মেহেরপুর যুক্ত (<a href="https://thedhakadiary.com/news/31405" target="_blank" rel="noopener noreferrer">ঢাকা ডায়েরি</a>; <a href="https://www.prothomalo.com/education/admission/q8vei5aecd" target="_blank" rel="noopener noreferrer">প্রথম আলো</a>)।</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>কোন বিশ্ববিদ্যালয়গুলো গুচ্ছে আছে, আর কোনগুলো বেরিয়ে গেছে?</h3>
+      <div class="strip-2">
+        <div class="strip-item-accent">
+          <h4>২০২৬–২৭ শিক্ষাবর্ষে নিশ্চিত ২৩টি বিশ্ববিদ্যালয়</h4>
+          <p>আগের ২০টি—(১) ইসলামী বিশ্ববিদ্যালয় (ইবি), (২) মাওলানা ভাসানী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (মাভাবিপ্রবি), (৩) পটুয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (পবিপ্রবি), (৪) নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (নোবিপ্রবি), (৫) জাতীয় কবি কাজী নজরুল ইসলাম বিশ্ববিদ্যালয় (জাককানইবি), (৬) যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (যবিপ্রবি), (৭) পাবনা বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (পাবিপ্রবি), (৮) বেগম রোকেয়া বিশ্ববিদ্যালয় (বেরোবি), (৯) গোপালগঞ্জ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (সাবেক বশেমুরবিপ্রবি), (১০) বরিশাল বিশ্ববিদ্যালয় (ববি), (১১) রাঙ্গামাটি বিপ্রবি, (১২) রবীন্দ্র বিশ্ববিদ্যালয়, (১৩) ইউনিভার্সিটি অব ফ্রন্টিয়ার টেকনোলজি, (১৪) নেত্রকোণা বিশ্ববিদ্যালয়, (১৫) জামালপুর বিপ্রবি, (১৬) চাঁদপুর বিপ্রবি, (১৭) কিশোরগঞ্জ বিশ্ববিদ্যালয়, (১৮) সুনামগঞ্জ বিপ্রবি, (১৯) পিরোজপুর বিপ্রবি, (২০) নওগাঁ বিশ্ববিদ্যালয়। এর সাথে নতুন যুক্ত হয়েছে <strong>(২১) বগুড়া বিশ্ববিদ্যালয়, (২২) ঠাকুরগাঁও বিশ্ববিদ্যালয় ও (২৩) মেহেরপুর বিশ্ববিদ্যালয়</strong> (<a href="https://thedhakadiary.com/news/31405" target="_blank" rel="noopener noreferrer">ঢাকা ডায়েরি, ২১ নভেম্বর ২০২৬</a>)।</p>
+        </div>
+        <div class="strip-item-teal">
+          <h4>যে ৫টি বেরিয়ে গেছে ও প্রচলিত ভুল ধারণা নিরসন</h4>
+          <p>২০২৪–২৫ সেশন থেকে <strong>জগন্নাথ বিশ্ববিদ্যালয় (জবি), শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (শাবিপ্রবি), খুলনা বিশ্ববিদ্যালয় (খুবি), হাজী মোহাম্মদ দানেশ বিপ্রবি (হাবিপ্রবি) ও কুমিল্লা বিশ্ববিদ্যালয় (কুবি)</strong> গুচ্ছ ছেড়ে নিজস্ব ভর্তি পরীক্ষা নিচ্ছে এবং ২০২৬–২৭ সেশনেও তারা আলাদা পরীক্ষা নেবে (<a href="https://www.prothomalo.com/education/admission/fyybhhtfaf" target="_blank" rel="noopener noreferrer">প্রথম আলো</a>; <a href="https://www.thedailystar.net/news/education/news/university-admission-tests-2026-27-date-clashes-emerge-8-institutions-announce-schedules-4260196" target="_blank" rel="noopener noreferrer">দ্য ডেইলি স্টার</a>)।</p>
+          <p><strong>জরুরি সংশোধনী:</strong> অনেকেই মনে করেন ইসলামী বিশ্ববিদ্যালয় (ইবি), গোপালগঞ্জ বিপ্রবি বা যবিপ্রবি (JUST) গুচ্ছ ছেড়ে দিয়েছে—এটি ভুল। ২১ নভেম্বর ২০২৬-এ গুচ্ছের সহ-আহ্বায়ক অধ্যাপক ড. গোলাম রব্বানী নিশ্চিত করেছেন যে যবিপ্রবিসহ এই বিশ্ববিদ্যালয়গুলো ২০২৬–২৭ গুচ্ছে থাকছে (<a href="https://thedhakadiary.com/news/31405" target="_blank" rel="noopener noreferrer">ঢাকা ডায়েরি</a>)।</p>
+        </div>
+      </div>
+
+      <h3>সি-ইউনিটের নিয়মাবলি: ২০২৬–২৭ নিশ্চিত তথ্য বনাম ২০২৫–২৬ বিধিমালা</h3>
+      <div class="strip">
+        <div class="strip-item">
+          <div class="metric-val">100 MCQ</div>
+          <div class="metric-label">পূর্ণমান ১০০, সময় ১ ঘণ্টা (৬০ মিনিট); প্রতিটি সঠিক উত্তরে ১ নম্বর (<a href="https://www.teachers.gov.bd/blog/details/854039" target="_blank" rel="noopener noreferrer">শিক্ষক বাতায়ন</a>)।</div>
+        </div>
+        <div class="strip-item">
+          <div class="metric-val">-0.25</div>
+          <div class="metric-label">প্রতিটি ভুল উত্তরে ০.২৫ নম্বর কাটা যায় (৪টি ভুলে ১ নম্বর কাটা) (<a href="https://www.prothomalo.com/education/admission/0rm6eychwi" target="_blank" rel="noopener noreferrer">প্রথম আলো</a>)।</div>
+        </div>
+        <div class="strip-item">
+          <div class="metric-val">30 / 100</div>
+          <div class="metric-label">কেন্দ্রীয় পাস নম্বর ৩০। আলাদা বিষয়ভিত্তিক পাস নম্বর নেই, তবে নির্দিষ্ট বিভাগে শর্ত থাকতে পারে।</div>
+        </div>
+        <div class="strip-item">
+          <div class="metric-val">6.25 GPA</div>
+          <div class="metric-label">২০২৫–২৬ সেশনে সি-ইউনিটে ন্যূনতম এসএসসি ৩.০০ + এইচএসসি ৩.০০ ও মোট ৬.২৫ (৪র্থ বিষয়সহ) (<a href="https://www.teachers.gov.bd/blog/details/854039" target="_blank" rel="noopener noreferrer">শিক্ষক বাতায়ন</a>)।</div>
+        </div>
+      </div>
+
+      <div class="measure">
+        <p><strong>যোগ্যতা, সেকেন্ড-টাইম ও আবেদন ফি (২০২৫–২৬ ভিত্তি):</strong> ২০২৫–২৬ সেশনে ২০২১–২০২৩ সালের এসএসসি এবং ২০২৪–২০২৫ সালের এইচএসসি উত্তীর্ণরা আবেদন করতে পেরেছিলেন—অর্থাৎ <strong>সেকেন্ড-টাইম (দ্বিতীয়বার) পরীক্ষার সুযোগ ছিল</strong>। সেই ধারাবাহিকতায় ২০২৬–২৭ সেশনে ২০২৫ ও ২০২৬ সালের এইচএসসি উত্তীর্ণদের সুযোগ থাকার জোরালো সম্ভাবনা রয়েছে, তবে তা চূড়ান্ত হবে আসন্ন ২০২৬–২৭ বিজ্ঞপ্তিতে। ২০২৫–২৬ সেশনে আবেদন ফি ছিল <strong>১,৫০০ টাকা</strong> (<a href="https://allresultbd.com/gst-admission-circular/" target="_blank" rel="noopener noreferrer">অলরেজাল্টবিডি</a>)।</p>
+        <p><strong>মেধাতালিকা, সাবজেক্ট চয়েস, অটো-মাইগ্রেশন ও চূড়ান্ত ভর্তি:</strong> ফলাফল প্রকাশের পর পাস করা শিক্ষার্থীরা <span class="mono">gstadmission.ac.bd</span> পোর্টালে কেন্দ্রীয়ভাবে বিশ্ববিদ্যালয় ও বিভাগ পছন্দক্রম (Subject Choice) পূরণ করেন—আলাদা বিশ্ববিদ্যালয়ে আর আবেদন করতে হয় না (<a href="https://www.teachers.gov.bd/blog/details/854039" target="_blank" rel="noopener noreferrer">শিক্ষক বাতায়ন</a>)। ২০২৫–২৬ সেশনে ৫টি ধাপে মেধাতালিকা প্রকাশিত হয়েছিল। মনোনীত হওয়ার পর নির্ধারিত সময়ের মধ্যে অনলাইনে <strong>৫,০০০ টাকা</strong> প্রাথমিক ভর্তি ফি জমা দিয়ে যেকোনো একটি গুচ্ছ বিশ্ববিদ্যালয়ে মূল এসএসসি ও এইচএসসি নম্বরপত্র জমা দিতে হয় (<a href="https://www.prothomalo.com/education/admission/98g503s3dr" target="_blank" rel="noopener noreferrer">প্রথম আলো, ৪ জুলাই ২০২৬</a>)। আসন শূন্য হওয়া সাপেক্ষে ওপরের পছন্দের বিষয় বা বিশ্ববিদ্যালয়ে <strong>অটো-মাইগ্রেশন</strong> হয়; শিক্ষার্থী চাইলে পোর্টাল থেকে 'Stop University Migration' বা 'Stop All Migration' করতে পারেন, তবে একবার বন্ধ করলে আর চালু করা যায় না। <strong>কঠোর সতর্কতা:</strong> নির্ধারিত সময়ে ৫,০০০ টাকা বা মূল কাগজপত্র জমা না দিলে কিংবা প্রাথমিক ভর্তি বাতিল করলে গুচ্ছের সব বিশ্ববিদ্যালয় (কোটা সহ) থেকে ভর্তি বাতিল হয়ে যায় (<a href="https://www.prothomalo.com/education/admission/98g503s3dr" target="_blank" rel="noopener noreferrer">প্রথম আলো</a>)।</p>
+      </div>
+    </section>
+
+    <!-- PART 2: COMPLETE C-UNIT SYLLABUS ANALYSIS -->
+    <section id="part2" class="sec">
+      <h2>সি-ইউনিটের সম্পূর্ণ সিলেবাস বিশ্লেষণ: ফুল সিলেবাসে ফেরার প্রভাব</h2>
+      <div class="measure">
+        <p>২০২১ থেকে ২০২৫ পর্যন্ত টানা পাঁচ বছর কোভিড-পরবর্তী সংক্ষিপ্ত (Short) সিলেবাসে এইচএসসি হওয়ায় জিএসটি গুচ্ছ পরীক্ষাও শর্ট সিলেবাস অনুসরণ করেছিল। কিন্তু এনসিটিবির নির্দেশনা অনুযায়ী <strong>এইচএসসি ২০২৬ পরীক্ষা পূর্ণাঙ্গ (Full) সিলেবাসে</strong> অনুষ্ঠিত হয়েছে (<a href="https://www.dhakatribune.com/bangladesh/education/389720/hsc-2026-to-be-held-on-full-syllabus" target="_blank" rel="noopener noreferrer">ঢাকা ট্রিবিউন</a>; <a href="https://en.prothomalo.com/youth/education/sh7trpsb7j" target="_blank" rel="noopener noreferrer">প্রথম আলো</a>)। ফলে ২০২৬–২৭ সেশনের সি-ইউনিট ভর্তিচ্ছুর জন্য শুধু পুরোনো শর্ট সিলেবাসের অধ্যায় পড়ে যাওয়া মারাত্মক ঝুঁকিপূর্ণ হবে—এনসিটিবি পাঠ্যবইয়ের সব অধ্যায়ই কভার করতে হবে।</p>
+      </div>
+
+      <!-- CHART 2: Marks Distribution Evolution SVG -->
+      <figure>
+        <div class="fig-title">আইসিটি বাদ দেওয়ার পর হিসাববিজ্ঞান ও ব্যবস্থাপনার যৌথ গুরুত্ব ৫০% থেকে বেড়ে ৭০% হয়েছে</div>
+        <svg class="chart" viewBox="0 0 700 260" width="100%" role="img" aria-label="২০২০-২১ বনাম ২০২১-২২ থেকে ২০২৫-২৬ সি-ইউনিট মানবণ্টন তুলনা">
+          <!-- Row 1: 2020-21 (Acc 25, Mgt 25, ICT 25, Ban 13, Eng 12) -->
+          <!-- Width = 540px (x=140 to 680). 1% = 5.4px -->
+          <text x="128" y="72" text-anchor="end" font-family="Hind Siliguri, sans-serif" font-size="14" font-weight="600" fill="#111827">২০২০–২১ সেশন</text>
+          <rect x="140" y="45" width="135" height="44" fill="#1D4ED8" />
+          <text x="207" y="72" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="#FFFFFF">হিসাব ২৫</text>
+
+          <rect x="275" y="45" width="135" height="44" fill="#0F766E" />
+          <text x="342" y="72" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="#FFFFFF">ব্যবস্থাপনা ২৫</text>
+
+          <rect x="410" y="45" width="135" height="44" fill="#64748B" />
+          <text x="477" y="72" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="#FFFFFF">ICT ২৫</text>
+
+          <rect x="545" y="45" width="70.2" height="44" fill="#4338CA" />
+          <text x="580" y="72" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="600" fill="#FFFFFF">বাং ১৩</text>
+
+          <rect x="615.2" y="45" width="64.8" height="44" fill="#334155" />
+          <text x="647" y="72" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="600" fill="#FFFFFF">ইং ১২</text>
+
+          <!-- Row 2: 2021-22 to 2025-26 (Acc 35, Mgt 35, Ban 15, Eng 15) -->
+          <text x="128" y="162" text-anchor="end" font-family="Hind Siliguri, sans-serif" font-size="14" font-weight="700" fill="#111827">২০২১–২৬ ধারা</text>
+          <rect x="140" y="135" width="189" height="44" fill="#1D4ED8" />
+          <text x="234" y="162" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="700" fill="#FFFFFF">হিসাববিজ্ঞান ৩৫</text>
+
+          <rect x="329" y="135" width="189" height="44" fill="#0F766E" />
+          <text x="423" y="162" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="700" fill="#FFFFFF">ব্যবস্থাপনা ৩৫</text>
+
+          <rect x="518" y="135" width="81" height="44" fill="#4338CA" />
+          <text x="558" y="162" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="#FFFFFF">বাংলা ১৫</text>
+
+          <rect x="599" y="135" width="81" height="44" fill="#334155" />
+          <text x="639" y="162" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="#FFFFFF">ইংরেজি ১৫</text>
+
+          <!-- Bracket / Annotation -->
+          <line x1="140" y1="194" x2="518" y2="194" stroke="#1E3A8A" stroke-width="2" />
+          <line x1="140" y1="188" x2="140" y2="194" stroke="#1E3A8A" stroke-width="2" />
+          <line x1="518" y1="188" x2="518" y2="194" stroke="#1E3A8A" stroke-width="2" />
+          <text x="329" y="216" text-anchor="middle" font-family="Hind Siliguri, sans-serif" font-size="14" font-weight="700" fill="#1E3A8A">বাণিজ্যের মূল ২ বিষয়েই মোট ৭০% নম্বর (৭০/১০০)</text>
+        </svg>
+        <figcaption>একক: মোট ১০০ নম্বরের এমসিকিউ পরীক্ষায় প্রতিটি বিষয়ের নম্বর। সূত্র: দ্য ডেইলি ক্যাম্পাস ও শিক্ষক বাতায়ন (২০২৫–২৬ বিধিমালা)।</figcaption>
+      </figure>
+
+      <div class="strip-2">
+        <div class="strip-item-accent">
+          <h3>১. হিসাববিজ্ঞান (Accounting — ৩৫ নম্বর)</h3>
+          <p><strong>প্রথম পত্র (১০টি অধ্যায়):</strong> (১) হিসাববিজ্ঞান পরিচিতি, (২) হিসাবের বইসমূহ (হিসাব সমীকরণ, জাবেদা, খতিয়ান, নগদান বই), (৩) ব্যাংক সমন্বয় বিবরণী, (৪) রেওয়ামিল, (৫) হিসাববিজ্ঞানের নীতিমালা (GAAP/IAS/IFRS), (৬) প্রাপ্য হিসাবের হিসাবরক্ষণ, (৭) কার্যপত্র (Worksheet), (৮) দৃশ্যমান ও অদৃশ্যমান সম্পদের হিসাবরক্ষণ (অবচয়), (৯) আর্থিক বিবরণী, (১০) একতরফা দাখিলা পদ্ধতি।</p>
+          <p><strong>দ্বিতীয় পত্র (১০টি অধ্যায়):</strong> (১) অব্যবসায়ী প্রতিষ্ঠানের হিসাব, (২) অংশীদারি ব্যবসায়ের হিসাব, (৩) নগদ প্রবাহ বিবরণী (Cash Flow), (৪) যৌথমূলধনী কোম্পানির মূলধন (শেয়ার ইস্যু), (৫) যৌথমূলধনী কোম্পানির আর্থিক বিবরণী, (৬) আর্থিক বিবরণী বিশ্লেষণ (অনুপাত বিশ্লেষণ), (৭) উৎপাদন ব্যয় হিসাববিজ্ঞান, (৮) মজুদ পণ্যের হিসাবরক্ষণ (FIFO/LIFO/গড়), (৯) ব্যয় ও ব্যয়ের শ্রেণিবিভাগ, (১০) ব্যবস্থাপনা হিসাববিজ্ঞান পরিচিতি (ব্রেক-ইভেন পয়েন্ট/সিভিপি)।</p>
+          <p><strong>ধারণা বনাম মুখস্থ ও বিভ্রান্তিকর জায়গা:</strong> হিসাববিজ্ঞানের ৬৫–৭০% প্রশ্ন ধারণাগত ও দ্রুত গাণিতিক (ক্যালকুলেটর ছাড়া ৩০–৪০ সেকেন্ডে সমাধানযোগ্য)। শিক্ষার্থীরা সবচেয়ে বেশি ভুল করে <em>ক্রয়মূল্যের ওপর লাভ বনাম বিক্রয়মূল্যের ওপর লাভ</em>, <em>বিপরীত সম্পদ (পুঞ্জিভূত অবচয়) বনাম বিপরীত মালিকানাস্বত্ব (ট্রেজারি স্টক)</em>, এবং <em>অগ্রিম আয় (দায়) বনাম বকেয়া আয় (সম্পদ)</em> চিহ্নিত করতে।</p>
+        </div>
+
+        <div class="strip-item-teal">
+          <h3>২. ব্যবসায় সংগঠন ও ব্যবস্থাপনা (৩৫ নম্বর)</h3>
+          <p><strong>প্রথম পত্র — ব্যবসায় সংগঠন (১২টি অধ্যায়):</strong> (১) ব্যবসায়ের মৌলিক ধারণা, (২) ব্যবসায় পরিবেশ, (৩) একমালিকানা ব্যবসায়, (৪) অংশীদারি ব্যবসায় (১৯৩২ সালের আইন), (৫) যৌথমূলধনী ব্যবসায় (১৯৯৪ সালের কোম্পানি আইন), (৬) সমবায় সমিতি (২০০১ সালের আইন), (৭) রাষ্ট্রীয় ব্যবসায়, (৮) ব্যবসায়ের আইনগত দিক (ট্রেডমার্ক, পেটেন্ট, কপিরাইট, বিএসটিআই), (৯) ব্যবসায় সহায়ক সেবা, (১০) ব্যবসায় উদ্যোগ, (১১) ব্যবসায়ে তথ্য ও যোগাযোগ প্রযুক্তির ব্যবহার (ই-বিজনেস/ই-ব্যাংকিং), (১২) ব্যবসায়ে নৈতিকতা ও সামাজিক দায়বদ্ধতা।</p>
+          <p><strong>দ্বিতীয় পত্র — ব্যবস্থাপনা (১০টি অধ্যায়):</strong> (১) ব্যবস্থাপনার ধারণা, (২) ব্যবস্থাপনার নীতি (হেনরি ফেয়লের ১৪ নীতি ও টেলরের বৈজ্ঞানিক ব্যবস্থাপনা), (৩) পরিকল্পনা, (৪) সংগঠিতকরণ, (৫) কর্মীসংস্থান (প্রশিক্ষণ: On-the-job বনাম Off-the-job), (৬) নেতৃত্ব, (৭) প্রেষণা (মাসলো, হার্জবার্গ, ম্যাকগ্রেগর), (৮) যোগাযোগ, (৯) সমন্বয়সাধন, (১০) নিয়ন্ত্রণ (বাজেট, PERT, CPM, ব্রেক-ইভেন)।</p>
+          <p><strong>মুখস্থ বনাম ধারণা ও আন্তঃসংযোগ:</strong> আইনের সাল ও ধারা (১৯৩২, ১৯৯৪, ২০০১), সদস্যসংখ্যা, স্মারকলিপি বনাম পরিমেল নিয়মাবলি এবং তাত্ত্বিকদের নাম মুখস্থনির্ভর; আর ব্যবস্থাপনার কার্যাবলি, নেতৃত্বের ধরন ও সমন্বয়-নিয়ন্ত্রণ সম্পূর্ণ ধারণাগত। প্রথম পত্রের কোম্পানি ও অংশীদারি অধ্যায় সরাসরি হিসাববিজ্ঞান ২য় পত্রের ২য় ও ৪র্থ অধ্যায়ের সাথে যুক্ত।</p>
+        </div>
+      </div>
+
+      <div class="strip-2">
+        <div class="strip-item">
+          <h3>৩. বাংলা (১৫ নম্বর)</h3>
+          <p><strong>বাংলা প্রথম পত্র (সাহিত্যপাঠ ও সহপাঠ):</strong> এনসিটিবি পাঠ্যবইয়ের গদ্য (যেমন: <em>অপরিচিতা, বিলাসী, আমার পথ, মানব-কল্যাণ, মাসি-পিসি, বায়ান্নর দিনগুলো, রেইনকোট, আহ্বান</em>), পদ্য (<em>সোনার তরী, বিদ্রোহী, প্রতিদান, তাহারেই পড়ে মনে, আঠারো বছর বয়স, ফেব্রুয়ারি ১৯৬৯, আমি কিংবদন্তির কথা বলছি</em>), উপন্যাস <em>লালসালু</em> ও নাটক <em>সিরাজউদ্দৌলা</em>। কবি-সাহিত্যিকের জন্ম-মৃত্যু, মূল গ্রন্থের নাম, চরিত্র, উক্তি ও শব্দার্থ থেকে সরাসরি প্রশ্ন আসে।</p>
+          <p><strong>বাংলা দ্বিতীয় পত্র (ব্যাকরণ ও বিরচন):</strong> বাংলা উচ্চারণের নিয়ম, বাংলা বানানের নিয়ম (ণ-ত্ব ও ষ-ত্ব বিধানসহ), বাংলা ভাষার ব্যাকরণিক শব্দশ্রেণি, উপসর্গ, সমাস, সন্ধি, প্রকৃতি-প্রত্যয়, বাক্যতত্ত্ব, অপপ্রয়োগ ও শুদ্ধ প্রয়োগ, পারিভাষিক শব্দ, সমার্থক-বিপরীত শব্দ ও বাগধারা।</p>
+          <p><strong>কেন শিক্ষার্থীরা ভুল করে:</strong> <em>কর্মধারয় বনাম তৎপুরুষ সমাস</em> (যেমন ২০২৫–২৬ সেশনে আসা 'আয়কর'), যুক্তবর্ণের বিশ্লেষণ এবং প্রচলিত ভুল বানানের ('সন্ন্যাসী', 'মুহূর্ত', 'পিপীলিকা') সূক্ষ্ম পার্থক্যে নম্বর হারায়।</p>
+        </div>
+
+        <div class="strip-item">
+          <h3>৪. ইংরেজি (১৫ নম্বর)</h3>
+          <p><strong>ব্যাকরণ (Grammar — মূল ভিত্তি):</strong> Parts of Speech & Identification, Subject-Verb Agreement (বিশেষ করে Inversion ও Collective Noun), Right Form of Verbs & Tense, Conditionals, Voice Change (Interrogative/Imperative সহ), Narration, Preposition (Appropriate Preposition), Transformation of Sentences, Modifiers, Determiners, Parallelism ও Pinpoint Error।</p>
+          <p><strong>শব্দভান্ডার ও পাঠ্যবই (Vocabulary & EFT):</strong> Synonyms & Antonyms, Spelling, Idioms & Phrases, One-Word Substitution, Analogy এবং <em>English for Today (HSC)</em>-এর নির্বাচিত প্যাসেজ থেকে সরাসরি Vocabulary/Comprehension প্রশ্ন।</p>
+          <p><strong>কেন শিক্ষার্থীরা ভুল করে:</strong> বাংলা অনুবাদ করে Preposition বসানো, Inverted sentence-এ Subject না চেনা (যেমন ২০২৪–২৫-এ আসা <em>"Sweet are the uses of adversity"</em>) এবং Interrogative Passive-এ Auxiliary Verb-এর অবস্থান ভুলে যাওয়া।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 3: HISTORICAL GST C-UNIT QUESTION ANALYSIS -->
+    <section id="part3" class="sec">
+      <h2>বিগত ছয় বছরের জিএসটি সি-ইউনিট প্রশ্নপত্রের ঐতিহাসিক বিশ্লেষণ (২০২০–২১ থেকে ২০২৫–২৬)</h2>
+      <div class="measure">
+        <p>২০২০–২১ থেকে ২০২৫–২৬ পর্যন্ত ছয়টি শিক্ষাবর্ষে অনুষ্ঠিত জিএসটি সি-ইউনিট প্রশ্নপত্রগুলোর সংরক্ষিত আর্কাইভ (<a href="https://sattacademy.com/admission/gucch-biswbidzalygst" target="_blank" rel="noopener noreferrer">স্যাট একাডেমি</a>; <a href="https://chorcha.net/question-bank/gst-c-unit-question-bank" target="_blank" rel="noopener noreferrer">চর্চা</a>) বিশ্লেষণ করলে একটি পরিষ্কার বিবর্তন চোখে পড়ে। প্রথম বছর (২০২০–২১) পরীক্ষামূলকভাবে ২৫ নম্বরের আইসিটি থাকলেও ২০২১–২২ থেকে প্রশ্নকাঠামো সম্পূর্ণভাবে এনসিটিবি বোর্ড বইকেন্দ্রিক ৩৫–৩৫–১৫–১৫ ধারায় স্থিতিশীল হয়। নিচে বছরভিত্তিক যাচাইকৃত বৈশিষ্ট্য ও সরাসরি পরীক্ষার প্রশ্ন তুলে ধরা হলো:</p>
+      </div>
+
+      <!-- Hairline year-wise breakdown (not <table> to respect max 3 tables) -->
+      <div class="data-row-list">
+        <div class="data-row-4 data-head">
+          <div>শিক্ষাবর্ষ ও তারিখ</div>
+          <div>মানবণ্টন ও সিলেবাস</div>
+          <div>যাচাইকৃত প্রশ্নের ধরন ও মূল পর্যবেক্ষণ</div>
+          <div>কঠিন্যের মাত্রা</div>
+        </div>
+        <div class="data-row-4">
+          <div><strong>২০২০–২১</strong><br /><span class="mono">১ নভে ২০২১</span></div>
+          <div>হিসাব ২৫, ব্যবস্থাপনা ২৫, আইসিটি ২৫, বাংলা ১৩, ইংরেজি ১২ (পূর্ণাঙ্গ ধারা)</div>
+          <div>প্রথম গুচ্ছ পরীক্ষা হওয়ায় আইসিটি ছিল বড় চমক। হিসাববিজ্ঞান ও ব্যবস্থাপনায় এনসিটিবি পাঠ্যবইয়ের মৌলিক সংজ্ঞা ও সহজ জাবেদা-সমীকরণ প্রাধান্য পায়। সম্পূর্ণ ১০০ প্রশ্নের অধ্যায়ভিত্তিক পরিসংখ্যান উন্মুক্ত আর্কাইভে আংশিক।</div>
+          <div>সহজ থেকে মধ্যম</div>
+        </div>
+        <div class="data-row-4">
+          <div><strong>২০২১–২২</strong><br /><span class="mono">২০ আগ ২০২২</span></div>
+          <div>হিসাব ৩৫, ব্যবস্থাপনা ৩৫, বাংলা ১৫, ইংরেজি ১৫ (শর্ট সিলেবাস)</div>
+          <div>আইসিটি বাদ দিয়ে বাণিজ্য অংশ ৭০%-এ উন্নীত হয়। সি-ইউনিটে পাসের হার ছিল ৫৯.৪৫% (<a href="https://bn.wikipedia.org/wiki/%E0%A6%9C%E0%A6%BF%E0%A6%8F%E0%A6%B8%E0%A6%9F%E0%A6%BF_%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B_%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A6%AF%E0%A6%BC_%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF_%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE" target="_blank" rel="noopener noreferrer">উইকিপিডিয়া</a>)। হিসাববিজ্ঞানে তাত্ত্বিক ও দ্রুত গাণিতিক প্রশ্নের ভারসাম্য তৈরি হয়।</div>
+          <div>মধ্যম</div>
+        </div>
+        <div class="data-row-4">
+          <div><strong>২০২২–২৩</strong><br /><span class="mono">২৭ মে ২০২৩</span></div>
+          <div>৩৫ / ৩৫ / ১৫ / ১৫ (শর্ট সিলেবাস)</div>
+          <div>৩৯,৮৬৫ জন আবেদনকারী (<a href="https://sattacademy.com/c-unit-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A6%BE-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%A8-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%A9-27-05-2023/all/mcq-questions" target="_blank" rel="noopener noreferrer">স্যাট একাডেমি</a>)। ব্যবস্থাপনায় হেনরি ফেয়ল, কোম্পানি আইন ১৯৯৪ এবং হিসাববিজ্ঞানে আর্থিক বিবরণী ও অনুপাত বিশ্লেষণ থেকে ধারাবাহিক প্রশ্ন আসে।</div>
+          <div>মধ্যম</div>
+        </div>
+        <div class="data-row-4">
+          <div><strong>২০২৩–২৪</strong><br /><span class="mono">১০ মে ২০২৪</span></div>
+          <div>৩৫ / ৩৫ / ১৫ / ১৫ (শর্ট সিলেবাস)</div>
+          <div>সর্বোচ্চ ২৪টি বিশ্ববিদ্যালয়ে ৪০,১১৬ জন আবেদনকারী। বোর্ড পরীক্ষার (HSC) বহুনির্বাচনী প্রশ্নের সাথে সামঞ্জস্যপূর্ণ ধারণাগত প্রশ্ন ও হিসাব সমীকরণের প্রভাবভিত্তিক প্রশ্ন বৃদ্ধি পায়।</div>
+          <div>মধ্যম</div>
+        </div>
+        <div class="data-row-4">
+          <div><strong>২০২৪–২৫</strong><br /><span class="mono">২৫ এপ্রি ২০২৫</span></div>
+          <div>৩৫ / ৩৫ / ১৫ / ১৫ (শর্ট সিলেবাস)</div>
+          <div>১৯ বিশ্ববিদ্যালয়ে পরীক্ষা (<a href="https://sattacademy.com/%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F-gst-%E0%A6%87%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A6%9F-c-%E0%A6%AC%E0%A6%BE%E0%A6%A3%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%AF-%E0%A6%B6%E0%A6%BE%E0%A6%96%E0%A6%BE-%E0%A6%B8%E0%A7%87%E0%A6%B6%E0%A6%A8-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AA-%E0%A7%A8%E0%A7%AB-25-04-2025/all/mcq-questions" target="_blank" rel="noopener noreferrer">স্যাট একাডেমি ২০২৪–২৫</a>)। হিসাববিজ্ঞানে লাভ-ক্ষতির হার, রেওয়ামিলের ভুল, নিমজ্জিত ব্যয় (Sunk Cost), অনুপার্জিত আয় এবং ব্যবস্থাপনায় RTGS, BSEC, কেন্দ্রীয় ব্যাংক ও টেলর-ফেয়ল থেকে চমৎকার প্রায়োগিক প্রশ্ন আসে।</div>
+          <div>মধ্যম থেকে ট্রিকি</div>
+        </div>
+        <div class="data-row-4">
+          <div><strong>২০২৫–২৬</strong><br /><span class="mono">২৭ মার্চ ২০২৬</span></div>
+          <div>৩৫ / ৩৫ / ১৫ / ১৫ (শর্ট সিলেবাস)</div>
+          <div>পাসের হার ৬৬.৫০%, সর্বোচ্চ স্কোর ৮৫ (<a href="https://sattacademy.com/%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F-gst-c-%E0%A6%87%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A6%9F-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A6%BE%E0%A7%9F-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%B7-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AB%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AC-27032026/all/mcq-questions" target="_blank" rel="noopener noreferrer">স্যাট একাডেমি ২০২৫–২৬</a>)। বোনাস শেয়ার, ট্রেজারি স্টক, বিপরীত সম্পদ, সরলরৈখিক অবচয়, সমাপনী মজুদ, মাসলো, পরিমেল নিয়মাবলি এবং ২০২৪–২৫-এর 'সমন্বয়সাধন' প্রশ্নটি হুবহু পুনরাবৃত্তি হয়।</div>
+          <div>সহজ থেকে মধ্যম</div>
+        </div>
+      </div>
+
+      <h3>সাম্প্রতিক দুই সেশনের (২০২৪–২৫ ও ২০২৫–২৬) যাচাইকৃত মূল প্রশ্নের নমুনা</h3>
+      <div class="strip-2">
+        <div class="strip-item">
+          <h4>২০২৫–২৬ সেশন (২৭ মার্চ ২০২৬) — যাচাইকৃত প্রশ্ন</h4>
+          <div class="qa-item">
+            <p class="qa-q">হিসাববিজ্ঞান: বোনাস শেয়ার ইস্যু করা হলে নিচের কোনটি ঘটবে?</p>
+            <p class="qa-a"><strong>উত্তর:</strong> মালিকানাস্বত্ব অপরিবর্তিত থাকবে (সংরক্ষিত আয় কমে এবং শেয়ার মূলধন সমপরিমাণ বাড়ে)।</p>
+          </div>
+          <div class="qa-item">
+            <p class="qa-q">হিসাববিজ্ঞান: ক্ষতির হার বিক্রয়মূল্যের ওপর ২০% হলে, বিক্রীত পণ্যের ব্যয়ের ওপর ক্ষতির হার কত?</p>
+            <p class="qa-a"><strong>উত্তর:</strong> ১৬.৬৭% — সূত্র: ২০ ÷ (১০০ + ২০) × ১০০ = ১৬.৬৭%।</p>
+          </div>
+          <div class="qa-item">
+            <p class="qa-q">হিসাববিজ্ঞান: প্রারম্ভিক মজুদ ৪০ টাকা, ক্রয় ২০০ টাকা, বিক্রয় ২০০ টাকা। বিক্রয়ের ওপর ২৫% মুনাফা হলে সমাপনী মজুদ কত?</p>
+            <p class="qa-a"><strong>উত্তর:</strong> ৯০ টাকা (বিক্রীত পণ্যের ব্যয় = ২০০ − ৫০ = ১৫০; সমাপনী মজুদ = ৪০ + ২০০ − ১৫০ = ৯০)।</p>
+          </div>
+          <div class="qa-item">
+            <p class="qa-q">ব্যবস্থাপনা: কোম্পানির অভ্যন্তরীণ ব্যবস্থাপনা নিয়ন্ত্রণকারী দলিলের নাম কী?</p>
+            <p class="qa-a"><strong>উত্তর:</strong> পরিমেল নিয়মাবলি (Articles of Association) — বিগত বোর্ড পরীক্ষাতেও ১৯ বারের বেশি এসেছে (<a href="https://sattacademy.com/%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F-gst-c-%E0%A6%87%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A6%9F-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A6%BE%E0%A7%9F-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%B7-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AB%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AC-27032026/all/mcq-questions" target="_blank" rel="noopener noreferrer">স্যাট একাডেমি</a>)।</p>
+          </div>
+          <div class="qa-item">
+            <p class="qa-q">বাংলা: 'আয়কর' কোন সমাস? / আবুল ফজলের 'মানবকল্যাণ' প্রবন্ধটি কোন গ্রন্থের অন্তর্ভুক্ত?</p>
+            <p class="qa-a"><strong>উত্তর:</strong> মধ্যপদলোপী কর্মধারয় সমাস / <em>মানবতন্ত্র</em> গ্রন্থ।</p>
+          </div>
+        </div>
+
+        <div class="strip-item">
+          <h4>২০২৪–২৫ সেশন (২৫ এপ্রিল ২০২৫) — যাচাইকৃত প্রশ্ন</h4>
+          <div class="qa-item">
+            <p class="qa-q">হিসাববিজ্ঞান: ক্রয়মূল্যের ওপর লাভের হার ২৫% এবং বিক্রয় ২০,০০০ টাকা হলে লাভের পরিমাণ কত?</p>
+            <p class="qa-a"><strong>উত্তর:</strong> ৪,০০০ টাকা — সূত্র: ২০,০০০ × (২৫ ÷ ১২৫) = ৪,০০০ টাকা (<a href="https://sattacademy.com/%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F-gst-%E0%A6%87%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A6%9F-c-%E0%A6%AC%E0%A6%BE%E0%A6%A3%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%AF-%E0%A6%B6%E0%A6%BE%E0%A6%96%E0%A6%BE-%E0%A6%B8%E0%A7%87%E0%A6%B6%E0%A6%A8-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AA-%E0%A7%A8%E0%A7%AB-25-04-2025/all/mcq-questions" target="_blank" rel="noopener noreferrer">স্যাট একাডেমি</a>)।</p>
+          </div>
+          <div class="qa-item">
+            <p class="qa-q">ব্যবস্থাপনা: পার্থক্যমূলক মজুরি প্রথা প্রবর্তন করেন কে? / কোনটি "off-the-job" প্রশিক্ষণ নয়?</p>
+            <p class="qa-a"><strong>উত্তর:</strong> এফ. ডব্লিউ. টেলর / ইন্টার্নশিপ (এটি On-the-job প্রশিক্ষণ)।</p>
+          </div>
+          <div class="qa-item">
+            <p class="qa-q">ব্যবস্থাপনা: ব্যাংকিংয়ে RTGS-এর পূর্ণরূপ কী? / কোন প্রতিষ্ঠান মূলধন বাজার নিয়ন্ত্রণ করে?</p>
+            <p class="qa-a"><strong>উত্তর:</strong> Real-Time Gross Settlement / বাংলাদেশ সিকিউরিটিজ অ্যান্ড এক্সচেঞ্জ কমিশন (BSEC)।</p>
+          </div>
+          <div class="qa-item">
+            <p class="qa-q">ইংরেজি: Sweet ____ the uses of adversity. / "Who can solve the problem?"-এর Passive form কী?</p>
+            <p class="qa-a"><strong>উত্তর:</strong> <em>are</em> (Subject 'the uses' প্লুরাল) / <em>By whom can the problem be solved?</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 4: PRE-GST INDIVIDUAL UNIVERSITY ADMISSION QUESTION ANALYSIS -->
+    <section id="part4" class="sec">
+      <h2>গুচ্ছ-পূর্ব একক বিশ্ববিদ্যালয়গুলোর সি-ইউনিট প্রশ্নপ্যাটার্ন বিশ্লেষণ</h2>
+      <div class="measure">
+        <p>জিএসটি চালু হওয়ার আগে প্রতিটি বিশ্ববিদ্যালয় নিজস্ব ইউনিট, সময় ও প্রশ্নশৈলীতে বাণিজ্য অনুষদের পরীক্ষা নিত। যদিও পুরোনো কোনো একক বিশ্ববিদ্যালয়ের প্যাটার্ন সরাসরি জিএসটির প্রশ্ন নির্ধারণ করে না, তবু যেহেতু একই বিশ্ববিদ্যালয়গুলোর শিক্ষকরাই জিএসটির প্রশ্ন প্রণয়ন ও মডারেশন প্যানেলে থাকেন, তাই তাঁদের ঐতিহ্যগত পছন্দের টপিক ও প্রশ্নশৈলী জানা থাকলে প্রস্তুতি অনেক বেশি শাণিত হয়।</p>
+      </div>
+
+      <!-- TABLE 2 (Table 2 of 3): Pre-GST University Comparison -->
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>বিশ্ববিদ্যালয়</th>
+              <th>গুচ্ছ-পূর্ব ইউনিট</th>
+              <th>পরীক্ষার কাঠামো ও সময়</th>
+              <th>বিষয়ভিত্তিক নম্বরবণ্টন (যাচাইকৃত)</th>
+              <th>প্রশ্নশৈলী ও জিএসটি সি-ইউনিটের সাথে সাদৃশ্য</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>জগন্নাথ বিশ্ববিদ্যালয় (জবি)</strong></td>
+              <td>সি-ইউনিট (≤২০১৭–১৮), ইউনিট-৩ (২০১৮–২০)</td>
+              <td>৭২ MCQ + ২৮ GPA (≤২০১৭–১৮); ২০১৮–২০ লিখিত পরীক্ষা, ১.৫ ঘণ্টা (<a href="https://www.dhakatribune.com/bangladesh/education/144364/jnu-scraps-mcq-system-in-admission-tests-other" target="_blank" rel="noopener noreferrer">ঢাকা ট্রিবিউন</a>)</td>
+              <td>হিসাববিজ্ঞান, ব্যবস্থাপনা, ইংরেজি ও বাংলা (২০১৭-পূর্ব MCQ ধারা)</td>
+              <td>ঢাবি গ-ইউনিটের মতোই ব্যাকরণ ও হিসাববিজ্ঞান-কেন্দ্রিক। <strong>২০১৭-পূর্ব MCQ প্রশ্নব্যাংক জিএসটির জন্য অত্যন্ত কার্যকর</strong>; ২০১৮–২০ লিখিত অংশ এখন অপ্রাসঙ্গিক।</td>
+            </tr>
+            <tr>
+              <td><strong>ইসলামী বিশ্ববিদ্যালয় (ইবি)</strong></td>
+              <td>জি-ইউনিট (≤২০১৭–১৮), সি-ইউনিট (২০১৮–২০)</td>
+              <td>২০১৯–২০: ৬০ MCQ + ২০ লিখিত + ৪০ GPA = ১২০ (<a href="https://studybarta.com/islamic-university-kushtia-admission-circular/" target="_blank" rel="noopener noreferrer">স্টাডিবার্তা</a>)</td>
+              <td>বাণিজ্যের মূল বিষয় + বাংলা ও ইংরেজি (<a href="https://chorcha.net/question-bank/gst-c-unit-question-bank" target="_blank" rel="noopener noreferrer">চর্চা আর্কাইভ</a>)</td>
+              <td>ইবি এখনো গুচ্ছের অন্যতম প্রধান বিশ্ববিদ্যালয়। এর ২০১৮–১৯ ও ২০১৯–২০ সি-ইউনিটের MCQ প্রশ্নগুলো পাঠ্যবইনির্ভর এবং জিএসটির সাথে খুবই সামঞ্জস্যপূর্ণ।</td>
+            </tr>
+            <tr>
+              <td><strong>খুলনা বিশ্ববিদ্যালয় (খুবি)</strong></td>
+              <td>সি-ইউনিট (২০১৯–২০, এমবিএ ও সামাজিক বিজ্ঞান)</td>
+              <td>১.৫ ঘণ্টা; ঐতিহাসিকভাবে MCQ + ফ্রি-হ্যান্ড ইংরেজি লিখিত (<a href="https://studybarta.com/khulna-university-admission-test/" target="_blank" rel="noopener noreferrer">স্টাডিবার্তা</a>)</td>
+              <td>ইংরেজি দক্ষতা, বিশ্লেষণী ক্ষমতা ও ব্যবসায়িক ধারণা প্রধান</td>
+              <td>খুবির প্রশ্ন ছিল উচ্চমানের বিশ্লেষণধর্মী ও ইংরেজি-ভারী। ইংরেজির ধারণাগত প্রস্তুতির জন্য ভালো, তবে লিখিত অংশ জিএসটিতে আসে না।</td>
+            </tr>
+            <tr>
+              <td><strong>কুমিল্লা বিশ্ববিদ্যালয় (কুবি)</strong></td>
+              <td>সি-ইউনিট (বাণিজ্য অনুষদ)</td>
+              <td>১০০ MCQ + ২০ GPA = ১২০; ১ ঘণ্টা, −০.২৫ নেগেটিভ (<a href="https://www.teachers.gov.bd/blog/details/854501" target="_blank" rel="noopener noreferrer">শিক্ষক বাতায়ন</a>)</td>
+              <td>বাংলা ২০, ইংরেজি ২০, হিসাববিজ্ঞান ৩০, ব্যবস্থাপনা ৩০</td>
+              <td><strong>জিএসটির সাথে সবচেয়ে ঘনিষ্ঠ MCQ মডেল</strong>—সরাসরি এনসিটিবি বোর্ড বইয়ের লাইন থেকে প্রশ্ন করার প্রবণতা।</td>
+            </tr>
+            <tr>
+              <td><strong>বরিশাল বিশ্ববিদ্যালয় (ববি)</strong></td>
+              <td>গ / সি-ইউনিট</td>
+              <td>১০০ MCQ × ১.২ = ১২০ নম্বর; ১ ঘণ্টা; পাস ৪৮ (<a href="https://thedailycampus.com/admission-test/28714/%E0%A6%AC%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%BE%E0%A6%B2-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F-%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%81%E0%A6%A4%E0%A6%BF-%E0%A6%97-%E0%A6%87%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A6%9F" target="_blank" rel="noopener noreferrer">দ্য ডেইলি ক্যাম্পাস</a>)</td>
+              <td>বাংলা ২৪, ইংরেজি ২৪, হিসাব ২৪, ব্যবসায় নীতি ২৪ + ফিন্যান্স/মার্কেটিং ২৪</td>
+              <td>ববি এখনো গুচ্ছে আছে। ফিন্যান্স/মার্কেটিং অংশ বাদ দিয়ে বাকি ৪ বিষয়ের MCQ অনুশীলন জিএসটির জন্য অত্যন্ত কার্যকর।</td>
+            </tr>
+            <tr>
+              <td><strong>জাককানইবি ও বেরোবি</strong></td>
+              <td>সি-ইউনিট (বাণিজ্য; AL ছিল কলা)</td>
+              <td>জাককানইবি: ৭৫ MCQ + ২৫ লিখিত (২০১৯–২০); বেরোবি: ৪ শিফটে ১ ঘণ্টার MCQ (<a href="https://studybarta.com/jkkniu-admission/" target="_blank" rel="noopener noreferrer">স্টাডিবার্তা</a>; <a href="https://thedailycampus.com/admission-test/32781/%E0%A6%AC%E0%A7%87%E0%A6%B0%E0%A7%8B%E0%A6%AC%E0%A6%BF%E0%A6%B0-%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A6%B6%E0%A7%81%E0%A6%B0%E0%A7%81-%E0%A6%95%E0%A6%BE%E0%A6%B2" target="_blank" rel="noopener noreferrer">ডেইলি ক্যাম্পাস</a>)</td>
+              <td>হিসাববিজ্ঞান, ব্যবস্থাপনা, বাংলা ও ইংরেজিনির্ভর</td>
+              <td>উভয় বিশ্ববিদ্যালয়ই এখনো গুচ্ছে রয়েছে; এদের ২০১৭–২০ MCQ সেটগুলো সরাসরি পাঠ্যবই-ভিত্তিক অনুশীলনের জন্য উপযোগী।</td>
+            </tr>
+            <tr>
+              <td><strong>বিজ্ঞান ও প্রযুক্তি (নোবিপ্রবি, যবিপ্রবি, মাভাবিপ্রবি, পাবিপ্রবি, শাবিপ্রবি)</strong></td>
+              <td>নোবিপ্রবি ও যবিপ্রবি: F; মাভাবিপ্রবি: D; পাবিপ্রবি: C; শাবিপ্রবি: A1</td>
+              <td>৮০–১০০ MCQ; ১ থেকে ১.৫ ঘণ্টা; −০.২৫ নেগেটিভ (<a href="https://studybarta.com/just-admission-test-circular/" target="_blank" rel="noopener noreferrer">যবিপ্রবি</a>; <a href="https://studybarta.com/pust-admission-test/" target="_blank" rel="noopener noreferrer">পাবিপ্রবি</a>)</td>
+              <td>যবিপ্রবি: ইং ৩০, হিসাব ২৫, ব্যবস্থাপনা ২৫ (বাংলা নেই); নোবিপ্রবি: ৫ বিষয়ে ২০ করে; শাবিপ্রবি: সাধারণ গণিত বাধ্যতামূলক</td>
+              <td>নোবিপ্রবি, যবিপ্রবি ও পাবিপ্রবির হিসাব-ব্যবস্থাপনা-ইংরেজি অংশ অনুশীলনের জন্য ভালো; তবে শাবিপ্রবির সাধারণ গণিত বা পাবিপ্রবির ফিন্যান্স এখন জিএসটিতে নেই।</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="measure">
+        <p><strong>কোন গুচ্ছ-পূর্ব ধারা এখন আর প্রাসঙ্গিক নয়?</strong> (১) জবি/ইবি/জাককানইবির ২০১৮–২০ সেশনের <strong>লিখিত (Written) প্রশ্ন</strong>, (২) ববি, নোবিপ্রবি বা পাবিপ্রবির <strong>ফিন্যান্স ও মার্কেটিং ঐচ্ছিক অংশ</strong>, এবং (৩) শাবিপ্রবির <strong>সাধারণ গণিত ও সাধারণ জ্ঞান</strong>। সময় বাঁচাতে এই অংশগুলো বাদ দিয়ে শুধু হিসাববিজ্ঞান, ব্যবস্থাপনা, বাংলা ও ইংরেজির MCQ সমাধান করাই বুদ্ধিমানের কাজ।</p>
+      </div>
+    </section>
+
+    <!-- PART 5: QUESTION SETTER / QUESTION BUILDER ANALYSIS -->
+    <section id="part5" class="sec">
+      <div class="grid-12">
+        <div class="col-4">
+          <h2>প্রশ্নপ্রণেতা ও প্রশ্নপত্র প্রণয়ন প্রক্রিয়া (২০২৬–২৭ বিশেষ ফোকাস)</h2>
+        </div>
+        <div class="col-8 measure">
+          <p><strong>জিএসটি প্রশ্নপত্র কীভাবে তৈরি হয়?</strong> গুচ্ছভুক্ত সব বিশ্ববিদ্যালয়ের উপাচার্যদের নিয়ে গঠিত <strong>সমন্বিত ভর্তি পরীক্ষার মূল কমিটি (Core Committee)</strong> নীতিনির্ধারণী সর্বোচ্চ কর্তৃপক্ষ হিসেবে কাজ করে। এর অধীনে টেকনিক্যাল, অর্থ, ক্রয় এবং গোপনীয় <strong>প্রশ্নপত্র প্রণয়ন ও মডারেশন উপকমিটি</strong> গঠিত হয় (<a href="https://www.prothomalo.com/education/admission/q8vei5aecd" target="_blank" rel="noopener noreferrer">প্রথম আলো, ১২ সেপ্টেম্বর ২০২৬</a>)। কোনো একটি নির্দিষ্ট বিশ্ববিদ্যালয়ের একক শিক্ষক নন—বরং গুচ্ছভুক্ত বিভিন্ন বিশ্ববিদ্যালয়ের সংশ্লিষ্ট অনুষদের জ্যেষ্ঠ অধ্যাপকদের সমন্বয়ে গোপনীয় প্যানেল প্রশ্ন প্রণয়ন ও যাচাই-বাছাই (Moderation) করেন, যাতে প্রশ্নপত্র এনসিটিবি পাঠ্যবইয়ের মানদণ্ড বজায় রাখে।</p>
+          <p><strong>নেতৃত্বের পালাবদল (Rotation):</strong> গুচ্ছের সমন্বয় ও আহ্বায়কের দায়িত্ব প্রতি সেশনে বিভিন্ন বিশ্ববিদ্যালয়ের মধ্যে আবর্তিত হয়—যেমন শুরুর দিকে জবি ও শাবিপ্রবি যৌথভাবে, ২০২৩–২৪ সেশনে যবিপ্রবি (JUST), ২০২৪–২৫ সেশনে মাভাবিপ্রবি (MBSTU) এবং ২০২৫–২৬ সেশনে ইসলামী বিশ্ববিদ্যালয় (ইবি) কেন্দ্রিক সচিবালয় কাজ করেছে। <strong>২০২৬–২৭ শিক্ষাবর্ষের জন্য মূল কমিটির আহ্বায়ক মনোনীত হয়েছেন পটুয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের (পবিপ্রবি) উপাচার্য অধ্যাপক ড. এস এম হেমায়েত জাহান এবং সহ-আহ্বায়ক নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের (নোবিপ্রবি) উপাচার্য অধ্যাপক ড. গোলাম রব্বানী</strong> (<a href="https://www.prothomalo.com/education/admission/q8vei5aecd" target="_blank" rel="noopener noreferrer">প্রথম আলো</a>; <a href="https://jagobarta.com/%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B-%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF%E0%A6%B0-%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A7%83%E0%A6%A4%E0%A7%8D%E0%A6%AC%E0%A7%87-%E0%A6%AA%E0%A6%AC/" target="_blank" rel="noopener noreferrer">জাগোবার্তা, ২২ নভেম্বর ২০২৬</a>)।</p>
+          <p><strong>২০২৬–২৭ সি-ইউনিটের প্রশ্ন কে করবেন? (স্বচ্ছ তথ্য):</strong> মূল কমিটির আহ্বায়ক পবিপ্রবি ও সহ-আহ্বায়ক নোবিপ্রবি হলেও, <strong>২০২৬–২৭ শিক্ষাবর্ষের সি-ইউনিটের প্রশ্নপত্র ঠিক কোন বিশ্ববিদ্যালয় বা কোন শিক্ষকেরা প্রণয়ন করবেন, সে বিষয়ে কোনো আনুষ্ঠানিক বা নির্ভরযোগ্য জনসম্মুখে প্রকাশিত তথ্য নেই।</strong> পরীক্ষার গোপনীয়তা রক্ষায় প্রশ্নপ্রণেতা প্যানেলের পরিচয় কখনোই প্রকাশ করা হয় না। তাই "অমুক বিশ্ববিদ্যালয় প্রশ্ন করবে"—এমন কোনো কোচিং গুজবে কান না দিয়ে এনসিটিবি বোর্ড বই ও বিগত ৬ বছরের জিএসটি ধারার ওপর ভিত্তি করে প্রস্তুতি নেওয়াই একমাত্র বিজ্ঞানসম্মত পথ।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 6: SUBJECT-WISE QUESTION PATTERN & STATISTICAL ANALYSIS -->
+    <section id="part6" class="sec">
+      <h2>বিষয়ভিত্তিক প্রশ্নপ্যাটার্ন ও পরিসংখ্যানগত বাস্তবতা</h2>
+
+      <!-- CHART 3: 2025-26 Exam Outcome & Competition SVG -->
+      <figure>
+        <div class="fig-title">২০২৫–২৬ সি-ইউনিটে উপস্থিত পরীক্ষার্থীর ৬৬.৫০% পাস করলেও কাঙ্ক্ষিত বিষয়ে ভর্তির জন্য ৬০+ নম্বর জরুরি</div>
+        <svg class="chart" viewBox="0 0 700 320" width="100%" role="img" aria-label="২০২৫-২৬ জিএসটি সি-ইউনিট আবেদনকারী, উপস্থিতি ও উত্তীর্ণ শিক্ষার্থীর তুলনামূলক চিত্র">
+          <!-- Max scale = 28,000; bar area x=190 to 610 (width = 420px; 1000 = 15px) -->
+          <line x1="190" y1="30" x2="190" y2="255" stroke="#9CA3AF" stroke-width="1.2" />
+          <line x1="340" y1="30" x2="340" y2="255" stroke="#E5E7EB" stroke-width="1" />
+          <line x1="490" y1="30" x2="490" y2="255" stroke="#E5E7EB" stroke-width="1" />
+          <line x1="610" y1="30" x2="610" y2="255" stroke="#E5E7EB" stroke-width="1" />
+
+          <!-- Bar 1: Applicants 25,216 (width = 378.2px) -->
+          <text x="178" y="75" text-anchor="end" font-family="Hind Siliguri, sans-serif" font-size="14" font-weight="600" fill="#111827">মোট আবেদনকারী</text>
+          <rect x="190" y="50" width="378" height="38" fill="#64748B" />
+          <text x="578" y="74" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="#111827">25,216</text>
+
+          <!-- Bar 2: Examinees 19,606 (width = 294.1px) -->
+          <text x="178" y="145" text-anchor="end" font-family="Hind Siliguri, sans-serif" font-size="14" font-weight="600" fill="#111827">পরীক্ষায় উপস্থিত</text>
+          <rect x="190" y="120" width="294" height="38" fill="#1D4ED8" />
+          <text x="494" y="144" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="#1E3A8A">19,606 (77.8%)</text>
+
+          <!-- Bar 3: Passed 12,978 (width = 194.7px) -->
+          <text x="178" y="215" text-anchor="end" font-family="Hind Siliguri, sans-serif" font-size="14" font-weight="600" fill="#111827">উত্তীর্ণ (৩০+ নম্বর)</text>
+          <rect x="190" y="190" width="195" height="38" fill="#0F766E" />
+          <text x="395" y="214" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="700" fill="#115E59">12,978 (66.5%)</text>
+
+          <!-- X-axis ticks -->
+          <text x="190" y="278" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#4B5563">0</text>
+          <text x="340" y="278" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#4B5563">10,000</text>
+          <text x="490" y="278" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#4B5563">20,000</text>
+          <text x="610" y="278" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#4B5563">28,000</text>
+
+          <!-- Benchmark Note -->
+          <text x="190" y="305" font-family="Hind Siliguri, sans-serif" font-size="13.5" font-weight="600" fill="#1E3A8A">সর্বোচ্চ প্রাপ্ত নম্বর: ৮৫ / ১০০ · পাস নম্বর: ৩০ / ১০০</text>
+        </svg>
+        <figcaption>একক: শিক্ষার্থী সংখ্যা (২০২৫–২৬ শিক্ষাবর্ষ, পরীক্ষা: ২৭ মার্চ ২০২৬, ফল প্রকাশ: ৩০ মার্চ ২০২৬)। সূত্র: দৈনিক শিক্ষা ও দ্য এশিয়ান এজ।</figcaption>
+      </figure>
+
+      <div class="strip-2">
+        <div class="strip-item">
+          <h3>হিসাববিজ্ঞান (৩৫ প্রশ্ন): অঙ্ক বনাম তত্ত্বের ভারসাম্য</h3>
+          <p>যাচাইকৃত ২০২৪–২৫ ও ২০২৫–২৬ প্রশ্ন বিশ্লেষণে দেখা যায়, হিসাববিজ্ঞানে প্রায় <strong>৫৫–৬০% তাত্ত্বিক ও ধারণাগত প্রশ্ন</strong> (যেমন: হিসাবের শ্রেণিবিভাগ, বিপরীত সম্পদ, হিসাব সমীকরণের প্রভাব, মূলধন বনাম মুনাফা জাতীয় ব্যয়, GAAP/নীতিমালা, বোনাস শেয়ার, ট্রেজারি স্টক) এবং <strong>৪০–৪৫% সংক্ষিপ্ত গাণিতিক প্রশ্ন</strong> (লাভ-ক্ষতির হার, বিক্রীত পণ্যের ব্যয়, সমাপনী মজুদ, সরলরৈখিক অবচয়, চলতি মূলধন ও ত্বরিত অনুপাত, রেওয়ামিলের ভুল) থাকে। প্রতিটি অঙ্ক এমনভাবে সাজানো হয় যাতে ক্যালকুলেটর ছাড়াই মনে মনে ভাগ-গুণ করে ৩০ সেকেন্ডে উত্তর বের করা যায়।</p>
+        </div>
+        <div class="strip-item">
+          <h3>ব্যবস্থাপনা (৩৫ প্রশ্ন): সরাসরি পাঠ্যবই ও প্রয়োগধর্মী প্রশ্ন</h3>
+          <p>ব্যবস্থাপনায় কোনো গাণিতিক হিসাব না থাকলেও প্রশ্নগুলো <strong>দুই ভাগে বিভক্ত</strong>: (ক) প্রায় ৬০–৬৫% সরাসরি তথ্য ও সংজ্ঞানর্ভর (আইনের ধারা, সদস্যসংখ্যা, তাত্ত্বিকদের নাম যেমন ফেয়ল, টেলর, মাসলো, অ্যাডাম স্মিথ, দলিলের নাম যেমন পরিমেল নিয়মাবলি), এবং (খ) ৩৫–৪০% প্রায়োগিক ও নেতিবাচক-কাঠামোর প্রশ্ন (যেমন: "কোনটি কার্যকর সংগঠনের বৈশিষ্ট্য নয়?", "কোনটি off-the-job প্রশিক্ষণ নয়?", "কাজের ছন্দপতন রোধ করে কোনটি?")। এছাড়া ২০২৪–২৫ সেশনে ব্যাংকিং ও অর্থনীতি-ঘেঁষা প্রশ্ন (RTGS, BSEC, কেন্দ্রীয় ব্যাংকের মুদ্রানীতি) দেখা গেছে।</p>
+        </div>
+        <div class="strip-item">
+          <h3>বাংলা (১৫ প্রশ্ন): ব্যাকরণে স্কোর নিশ্চিত করা সহজ</h3>
+          <p>বাংলায় সাধারণত ৭–৮টি প্রশ্ন প্রথম পত্রের সাহিত্যপাঠ ও সহপাঠ (লেখক পরিচিতি, মূল গ্রন্থ, চরিত্র ও উক্তি) থেকে এবং ৭–৮টি প্রশ্ন দ্বিতীয় পত্রের ব্যাকরণ ও বিরচন (সমাস, সন্ধি, বানান, উপসর্গ, শব্দশ্রেণি, পারিভাষিক শব্দ) থেকে আসে। ২০২৫–২৬ সেশনে <em>মানবকল্যাণ</em> ও <em>বিদ্রোহী</em> থেকে সরাসরি বোর্ড-স্ট্যান্ডার্ড প্রশ্ন এসেছে (<a href="https://sattacademy.com/%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F-gst-c-%E0%A6%87%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A6%9F-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A6%BE%E0%A7%9F-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%B7-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AB%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AC-27032026/all/mcq-questions" target="_blank" rel="noopener noreferrer">স্যাট একাডেমি</a>)।</p>
+        </div>
+        <div class="strip-item">
+          <h3>ইংরেজি (১৫ প্রশ্ন): মেধাক্রম এগিয়ে নেওয়ার আসল চাবিকাঠি</h3>
+          <p>বাণিজ্যের বেশিরভাগ শিক্ষার্থী হিসাববিজ্ঞান ও ব্যবস্থাপনায় কাছাকাছি নম্বর পায়; পার্থক্য গড়ে দেয় ইংরেজির ১৫ নম্বর। এখানে ৯–১০টি প্রশ্ন মৌলিক ব্যাকরণ (Subject-Verb Agreement, Right Form of Verbs, Voice, Preposition, Conditional, Parts of Speech) এবং ৫–৬টি প্রশ্ন Vocabulary (Synonym/Antonym, Spelling, Idioms ও EFT পাঠ্যবই) থেকে আসে।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 7: MOST IMPORTANT TOPICS (PRIORITY A, B, C, D) -->
+    <section id="part7" class="sec">
+      <h2>জিএসটি সি-ইউনিট ২০২৬–২৭: বৈজ্ঞানিক অগ্রাধিকার তালিকা (Priority A থেকে D)</h2>
+      <div class="measure">
+        <p>বিগত জিএসটি প্রশ্নপত্র, এইচএসসি বোর্ড প্রশ্ন এবং ২০২৬–২৭-এর ফুল সিলেবাস সমন্বয় করে প্রতিটি বিষয়ের টপিকগুলোকে চারটি অগ্রাধিকার স্তরে ভাগ করা হলো। মনে রাখবেন, <strong>অতীতে বেশি প্রশ্ন আসা মানেই ভবিষ্যতে শতভাগ নিশ্চয়তা নয়</strong>—বরং এটি সীমিত সময়ে সর্বোচ্চ নম্বর নিশ্চিত করার বৈজ্ঞানিক ক্রম।</p>
+      </div>
+
+      <div class="strip-2">
+        <div class="strip-item-accent">
+          <h3><span class="prio-a">Priority A — সর্বোচ্চ অগ্রাধিকার (অবশ্যই শতভাগ আয়ত্ত)</span></h3>
+          <ul>
+            <li><strong>হিসাববিজ্ঞান:</strong> হিসাব সমীকরণ ও লেনদেনের প্রভাব; হিসাবের শ্রেণিবিভাগ ও বিপরীত হিসাব (পুঞ্জিভূত অবচয়, ট্রেজারি স্টক); সমন্বয় ও সমাপনী দাখিলা; রেওয়ামিলের ভুল সংশোধন; আর্থিক বিবরণী (বিক্রীত পণ্যের ব্যয়, ক্রয়মূল্য বনাম বিক্রয়মূল্যের ওপর লাভ-ক্ষতি); সরলরৈখিক ও ক্রমহ্রাসমান অবচয়; যৌথমূলধনী কোম্পানির শেয়ার ও বোনাস শেয়ার; অনুপাত বিশ্লেষণ (চলতি ও ত্বরিত অনুপাত)।</li>
+            <li><strong>ব্যবস্থাপনা:</strong> একমালিকানা, অংশীদারি (১৯৩২) ও কোম্পানি আইন (১৯৯৪) — সদস্যসংখ্যা, স্মারকলিপি বনাম পরিমেল নিয়মাবলি; সমবায় সমিতি (২০০১); হেনরি ফেয়লের ১৪ নীতি ও টেলরের বৈজ্ঞানিক ব্যবস্থাপনা; পরিকল্পনা ও সংগঠনের ধরন; কর্মীসংস্থান ও প্রশিক্ষণ (On/Off-the-job); প্রেষণা তত্ত্ব (মাসলো, হার্জবার্গ); সমন্বয়সাধন ও নিয়ন্ত্রণ কৌশল।</li>
+            <li><strong>বাংলা:</strong> সমাস, সন্ধি, বাংলা বানান ও ণ-ত্ব/ষ-ত্ব বিধান, উপসর্গ, শব্দশ্রেণি, প্রধান গদ্য-পদ্যের মূল গ্রন্থ ও লেখক পরিচিতি।</li>
+            <li><strong>ইংরেজি:</strong> Subject-Verb Agreement, Right Form of Verbs, Voice Change, Appropriate Prepositions, Parts of Speech, Synonyms–Antonyms ও Spelling।</li>
+          </ul>
+        </div>
+
+        <div class="strip-item-teal">
+          <h3><span class="prio-b">Priority B — অত্যন্ত গুরুত্বপূর্ণ (মেধাক্রম ওপরের দিকে নিতে)</span></h3>
+          <ul>
+            <li><strong>হিসাববিজ্ঞান:</strong> ব্যাংক সমন্বয় বিবরণী; হিসাববিজ্ঞানের নীতিমালা (GAAP, রক্ষণশীলতা, বকেয়া ভিত্তি, চলমান প্রতিষ্ঠান); প্রাপ্য হিসাব ও অনাদায়ী পাওনা সঞ্চিতি; মজুদ পণ্যের মূল্যায়ন (FIFO/LIFO ও উৎপাদন ব্যয়ে অন্তর্ভুক্ত খরচ); ব্যয়ের শ্রেণিবিভাগ (নিমজ্জিত ব্যয়, পরিবর্তনশীল ও মিশ্র ব্যয়); ব্যবস্থাপনা হিসাববিজ্ঞান (ব্রেক-ইভেন পয়েন্ট)।</li>
+            <li><strong>ব্যবস্থাপনা:</strong> ব্যবসায় পরিবেশ (মুদ্রানীতি, রাজস্বনীতি, কেন্দ্রীয় ব্যাংক, BSEC); ই-ব্যাংকিং ও ই-বিজনেস (RTGS, EFT, B2B/B2C); ব্যবসায় উদ্যোগ ও উদ্যোক্তার গুণাবলি; নেতৃত্বের ধরন; যোগাযোগ প্রক্রিয়া।</li>
+            <li><strong>বাংলা:</strong> প্রকৃতি-প্রত্যয়, বাক্যতত্ত্ব, অপপ্রয়োগ-শুদ্ধপ্রয়োগ, <em>লালসালু</em> ও <em>সিরাজউদ্দৌলা</em>-এর গুরুত্বপূর্ণ চরিত্র ও সংলাপ, পারিভাষিক শব্দ।</li>
+            <li><strong>ইংরেজি:</strong> Conditionals, Narration, Transformation of Sentences, Idioms & Phrases, Determiners ও EFT প্যাসেজভিত্তিক প্রশ্ন।</li>
+          </ul>
+        </div>
+
+        <div class="strip-item">
+          <h3><span class="prio-c">Priority C — গুরুত্বপূর্ণ (ফুল সিলেবাসে ফেরায় নতুন নজরদারি)</span></h3>
+          <ul>
+            <li><strong>হিসাববিজ্ঞান:</strong> অংশীদারি ব্যবসায়ের হিসাব (মুনাফা বণ্টন ও উত্তোলনের সুদ); অব্যবসায়ী প্রতিষ্ঠানের হিসাব (চাঁদা হিসাবায়ন); নগদ প্রবাহ বিবরণী (পরিচালন, বিনিয়োগ ও অর্থায়ন কার্যক্রম); কার্যপত্র (Worksheet); উৎপাদন ব্যয় বিবরণী।</li>
+            <li><strong>ব্যবস্থাপনা:</strong> রাষ্ট্রীয় ব্যবসায়; ব্যবসায়ের আইনগত দিক (পেটেন্ট, ট্রেডমার্ক, কপিরাইট, বিএসটিআই); ব্যবসায় সহায়ক সেবা; ব্যবসায়ে নৈতিকতা ও সিএসআর।</li>
+            <li><strong>বাংলা ও ইংরেজি:</strong> বাগধারা, এককথায় প্রকাশ, ধ্বনি পরিবর্তন; ইংরেজিতে Modifiers, Parallelism, Pinpoint Error ও One-Word Substitution।</li>
+          </ul>
+        </div>
+
+        <div class="strip-item">
+          <h3><span class="prio-d">Priority D — তুলনামূলক কম প্রশ্ন আসে (শেষ ধাপে রিভিশন)</span></h3>
+          <ul>
+            <li><strong>হিসাববিজ্ঞান:</strong> একতরফা দাখিলা পদ্ধতি (যদিও প্রারম্ভিক-সমাপনী মূলধন থেকে লাভ-ক্ষতি নির্ণয়ের ছোট সূত্রটি দেখে রাখা ভালো); হিসাববিজ্ঞানের ঐতিহাসিক ক্রমবিকাশের অপ্রধান তারিখ।</li>
+            <li><strong>ব্যবস্থাপনা:</strong> অপ্রধান আন্তর্জাতিক বাণিজ্য সংস্থার বিস্তারিত ইতিহাস; দীর্ঘ বর্ণনামূলক কেস-স্টাডি।</li>
+            <li><strong>বাংলা ও ইংরেজি:</strong> বিরল ছন্দ-অলঙ্কার; ইংরেজি সাহিত্যের গভীর যুগবিভাগ (জিএসটি সি-ইউনিটে সাহিত্যতত্ত্ব খুব কম আসে)।</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 8: SPECIAL QUESTION PATTERNS AND HIDDEN TRENDS -->
+    <section id="part8" class="sec">
+      <h2>বিশেষ প্রশ্নপ্যাটার্ন, লুকানো প্রবণতা ও পরীক্ষকের ফাঁদ</h2>
+      <div class="measure">
+        <p>সাধারণ শিক্ষার্থী আর মেধাতালিকার শীর্ষ ১০০ শিক্ষার্থীর মধ্যে পার্থক্য তৈরি হয় পরীক্ষকের প্রশ্ন করার সূক্ষ্ম মনস্তত্ত্ব ধরতে পারার ক্ষমতায়। যাচাইকৃত জিএসটি প্রশ্নপত্রে অন্তত ৬টি নির্দিষ্ট ফাঁদ বারবার দেখা গেছে:</p>
+      </div>
+
+      <div class="strip-3">
+        <div class="strip-item-accent">
+          <h4>১. বোর্ড প্রশ্ন ও আগের বছরের হুবহু পুনরাবৃত্তি</h4>
+          <p>২০২৪–২৫ সেশনে এসেছিল—<em>"কাজের ছন্দপতন রোধ করতে পারে ব্যবস্থাপনার কোন কাজ?"</em> এবং ২০২৫–২৬ সেশনেও হুবহু একই প্রশ্ন এসেছে (উত্তর: সমন্বয়সাধন)। আবার <em>"পরিমেল নিয়মাবলি"</em> ও <em>"মাসলোর চাহিদা সোপান"</em> প্রশ্নগুলো বিগত এইচএসসি বোর্ড পরীক্ষা থেকে সরাসরি নেওয়া (<a href="https://sattacademy.com/%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F-gst-c-%E0%A6%87%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A6%9F-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A6%BE%E0%A7%9F-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%B7-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AB%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AC-27032026/all/mcq-questions" target="_blank" rel="noopener noreferrer">স্যাট একাডেমি</a>)।</p>
+        </div>
+        <div class="strip-item-accent">
+          <h4>২. ক্রয়মূল্য বনাম বিক্রয়মূল্যে লাভ-ক্ষতির ফাঁদ</h4>
+          <p>২০২৪–২৫ সেশনে <em>ক্রয়মূল্যের ওপর ২৫% লাভ</em> থেকে বিক্রয়ের ওপর লাভ বের করতে দেওয়া হয়েছিল (২৫/১২৫), আর ২০২৫–২৬ সেশনে <em>বিক্রয়মূল্যের ওপর ২০% ক্ষতি</em> থেকে ব্যয়ের ওপর ক্ষতির হার (২০/১২০ = ১৬.৬৭%) চাওয়া হয়েছে। শিক্ষার্থীরা তাড়াহুড়োয় হরে যোগ-বিয়োগ উল্টে ফেলে ভুল করে।</p>
+        </div>
+        <div class="strip-item-accent">
+          <h4>৩. "কোনটি নয়?" (Negative Stem) ফাঁদ</h4>
+          <p>ব্যবস্থাপনায় <em>"কোনটি off-the-job প্রশিক্ষণ নয়?"</em>, <em>"কোনটি কর্মীসংস্থান প্রক্রিয়ার অন্তর্ভুক্ত নয়?"</em> বা <em>"কোনটি কার্যকর সংগঠনের বৈশিষ্ট্য নয়?"</em>—এ ধরনের প্রশ্নে 'নয়' শব্দটি চোখ এড়িয়ে গিয়ে শিক্ষার্থীরা প্রথম সঠিক অপশনটিই দাগিয়ে ফেলে।</p>
+        </div>
+        <div class="strip-item">
+          <h4>৪. বিপরীত হিসাব ও মালিকানাস্বত্বের সূক্ষ্ম মারপ্যাঁচ</h4>
+          <p>বোনাস শেয়ার ইস্যু করলে মালিকানাস্বত্ব বাড়ে বলে মনে হলেও আসলে <strong>অপরিবর্তিত থাকে</strong>। তেমনি ট্রেজারি স্টক সম্পদ নয়—এটি <strong>মালিকানাস্বত্ব</strong> (বিপরীত মালিকানাস্বত্ব হিসেবে বিয়োগ হয়), আর পুঞ্জিভূত অবচয় দায় নয়—এটি <strong>বিপরীত সম্পদ</strong>।</p>
+        </div>
+        <div class="strip-item">
+          <h4>৫. অবহেলিত অধ্যায় থেকে চমকপ্রদ প্রশ্ন</h4>
+          <p>অনেক শিক্ষার্থী ই-ব্যাংকিং বা ব্যবসায় পরিবেশের ছোট লাইন বাদ দেয়, অথচ ২০২৪–২৫ সেশনে সরাসরি এসেছে <strong>RTGS-এর পূর্ণরূপ</strong>, <strong>BSEC</strong> এবং <strong>কেন্দ্রীয় ব্যাংকের মুদ্রানীতি</strong>। তেমনি ব্যয় শ্রেণিবিভাগ থেকে এসেছে <strong>নিমজ্জিত ব্যয় (Sunk Cost)</strong>।</p>
+        </div>
+        <div class="strip-item">
+          <h4>৬. ইংরেজিতে Inversion ও Passive-এর ক্রম</h4>
+          <p><em>"Sweet ___ the uses of adversity"</em>-এ শুরুতে Sweet দেখে অনেকেই 'is' দাগিয়েছে, অথচ আসল কর্তা 'the uses' (প্লুরাল), তাই উত্তর <em>are</em>। আবার <em>"Who can solve..."</em>-এর Passive-এ প্রশ্নবোধক ক্রম (<em>By whom can the problem be solved?</em>) না মানলে ০.২৫ নম্বর কাটা যায়।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 9: 2026-2027 EXAMINATION TREND FORECAST (FULL-BLEED BAND - 1 of 1) -->
+    <section id="part9" class="full-bleed-band">
+      <h2>২০২৬–২০২৭ পরীক্ষার প্রবণতা পূর্বাভাস (বিশ্লেষণধর্মী অনুমান)</h2>
+      <p class="measure"><strong>স্পষ্ট ঘোষণা:</strong> এই অংশটি সম্পূর্ণরূপে ঐতিহাসিক তথ্য, এনসিটিবি সিলেবাস পরিবর্তন এবং বিগত ৬ বছরের প্রশ্নপ্যাটার্ন বিশ্লেষণের ওপর ভিত্তি করে তৈরি একটি <em>একাডেমিক পূর্বাভাস</em>—এটি কোনো নিশ্চিত তথ্য বা আগাম প্রশ্ন নয়।</p>
+
+      <div class="strip-3">
+        <div class="strip-item">
+          <div class="metric-val">ফুল সিলেবাস</div>
+          <div class="metric-label"><strong>সবচেয়ে বড় সম্ভাব্য পরিবর্তন:</strong> এইচএসসি ২০২৬ পূর্ণাঙ্গ সিলেবাসে হওয়ায় বিগত ৫ বছর বাদ থাকা অধ্যায়—বিশেষ করে <em>অংশীদারি হিসাব, অব্যবসায়ী প্রতিষ্ঠান, নগদ প্রবাহ বিবরণী, ব্যয় শ্রেণিবিভাগ, রাষ্ট্রীয় ব্যবসায় ও ব্যবসায় আইনগত দিক</em>—থেকে নতুন প্রশ্ন যুক্ত হওয়ার জোরালো সম্ভাবনা রয়েছে।</div>
+        </div>
+        <div class="strip-item">
+          <div class="metric-val">ধারণাগত মান</div>
+          <div class="metric-label"><strong>মুখস্থের বদলে যুক্তিনির্ভর প্রশ্ন:</strong> ২০২৪–২৫ ও ২০২৫–২৬-এর ধারাবাহিকতায় হিসাববিজ্ঞানে দীর্ঘ অঙ্কের বদলে ১–২ ধাপের যুক্তিনির্ভর অঙ্ক (লাভের হার, মজুদ, অবচয়, অনুপাত) এবং ব্যবস্থাপনায় প্রয়োগধর্মী ও 'কোনটি নয়?' ধাঁচের প্রশ্ন বাড়তে পারে।</div>
+        </div>
+        <div class="strip-item">
+          <div class="metric-val">২৩+ ক্যাম্পাস</div>
+          <div class="metric-label"><strong>প্রতিযোগিতা ও কাট-মার্কস:</strong> বগুড়া, ঠাকুরগাঁও ও মেহেরপুর বিশ্ববিদ্যালয় যুক্ত হওয়ায় আসন কিছুটা বাড়বে, তবে ইসলামী বিশ্ববিদ্যালয় (ইবি), বরিশাল বিশ্ববিদ্যালয় (ববি), বেরোবি, নোবিপ্রবি ও যবিপ্রবির ভালো বিবিএ বিভাগে সুযোগ পেতে হলে <strong>৬০–৬৫+ নম্বর</strong> নিরাপদ লক্ষ্য হওয়া উচিত।</div>
+        </div>
+      </div>
+
+      <p class="measure"><strong>অতিরিক্ত সতর্কতা যেসব বিষয়ে:</strong> (১) ২০২৬–২৭-এর আনুষ্ঠানিক বিজ্ঞপ্তি প্রকাশের সাথে সাথেই জিপিএ শর্ত, সেকেন্ড-টাইম নীতিমালা ও সিলেবাস সংক্রান্ত যেকোনো নতুন নির্দেশনা <span class="mono">gstadmission.ac.bd</span> থেকে মিলিয়ে নেবেন; (২) যেহেতু এবার জবি, খুবি, কুবি, শাবিপ্রবি ও হাবিপ্রবি আলাদা পরীক্ষা নিচ্ছে, তাই সেই পরীক্ষাগুলোর প্রস্তুতির সাথে জিএসটির ৭০% বাণিজ্য-কেন্দ্রিক প্রস্তুতির ভারসাম্য রাখুন।</p>
+    </section>
+
+    <!-- PART 10: PREVIOUS QUESTION-BASED PREPARATION STRATEGY -->
+    <section id="part10" class="sec" style="border-top: none; margin-top: 48px;">
+      <h2>বিগত প্রশ্নভিত্তিক ১৬ সপ্তাহের বাস্তবসম্মত প্রস্তুতি কৌশল (নভেম্বর ২০২৬ – মার্চ ২০২৭)</h2>
+      <div class="measure">
+        <p>আজ ২৫ নভেম্বর ২০২৬ থেকে পরীক্ষা <strong>২০ মার্চ ২০২৭</strong> পর্যন্ত আপনার হাতে আছে প্রায় <strong>১৬ সপ্তাহ (১১৪ দিন)</strong>। এলোমেলো গাইড বই না পড়ে নিচের চার ধাপের রোডম্যাপ অনুসরণ করলে পুরো ফুল সিলেবাস ও বিগত প্রশ্নব্যাংক কমপক্ষে তিনবার রিভিশন দেওয়া সম্ভব:</p>
+      </div>
+
+      <div class="data-row-list">
+        <div class="data-row data-head">
+          <div>ধাপ ও সময়কাল</div>
+          <div>কী পড়বেন ও কীভাবে অনুশীলন করবেন</div>
+          <div>লক্ষ্যমাত্রা</div>
+        </div>
+        <div class="data-row">
+          <div><strong>ধাপ ১: ভিত্তি গঠন</strong><br /><span class="mono">সপ্তাহ ১–৬</span><br />(নভে শেষ – জানু ১ম সপ্তাহ)</div>
+          <div>এনসিটিবি মূল পাঠ্যবই ধরে <strong>Priority A ও B</strong> অধ্যায়গুলো শেষ করুন। প্রতিদিন অন্তত ২ ঘণ্টা হিসাববিজ্ঞান (হাত-কলমে ছোট অঙ্ক), ২ ঘণ্টা ব্যবস্থাপনা (আইন, নীতি ও সংজ্ঞা দাগিয়ে পড়া), ১ ঘণ্টা ইংরেজি ব্যাকরণ+ভোকাবুলারি এবং ১ ঘণ্টা বাংলা। প্রতিটি অধ্যায় শেষে বিগত এইচএসসি বোর্ড MCQ (২০১৭–২০২৬) সমাধান করুন।</div>
+          <div>৭০% কোর সিলেবাস ও মূল কনসেপ্ট পরিষ্কার করা</div>
+        </div>
+        <div class="data-row">
+          <div><strong>ধাপ ২: ফুল সিলেবাস ও প্রশ্নব্যাংক</strong><br /><span class="mono">সপ্তাহ ৭–১১</span><br />(জানু ২য় সপ্তাহ – ফেব্রু ২য় সপ্তাহ)</div>
+          <div><strong>Priority C ও D</strong> অধ্যায়গুলো (অংশীদারি, অব্যবসায়ী, নগদ প্রবাহ, রাষ্ট্রীয় ব্যবসায়, আইনগত দিক) শেষ করুন। পাশাপাশি <strong>জিএসটি সি-ইউনিট ২০২০–২১ থেকে ২০২৫–২৬</strong> পর্যন্ত সব প্রশ্ন ব্যাখ্যাসহ সমাধান করুন। এরপর <strong>গুচ্ছ-পূর্ব কুবি, ববি, ইবি, বেরোবি ও জবি (২০১৭-পূর্ব)</strong> এবং ঢাবি গ-ইউনিটের বিগত ৫ বছরের MCQ অনুশীলন করুন।</div>
+          <div>প্রশ্নপ্যাটার্ন ও পরীক্ষকের ফাঁদ পুরোপুরি চিনে নেওয়া</div>
+        </div>
+        <div class="data-row">
+          <div><strong>ধাপ ৩: মডেল টেস্ট ও ভুল সংশোধন</strong><br /><span class="mono">সপ্তাহ ১২–১৪</span><br />(ফেব্রু ৩য় সপ্তাহ – মার্চ ১ম সপ্তাহ)</div>
+          <div>ঘড়ি ধরে <strong>৫৫ মিনিটে ১০০ নম্বরের OMR মডেল টেস্ট</strong> দিন (অতিরিক্ত ৫ মিনিট রিচেকের জন্য)। প্রতিটি পরীক্ষার পর ভুল করা প্রশ্নগুলো আলাদা 'মিস্টেক খাতায়' লিখে রাখুন—কেন ভুল হলো (সূত্রের ভুল, 'নয়' না দেখা, নাকি আন্দাজে দাগানো) তা বিশ্লেষণ করুন।</div>
+          <div>গতি ও নির্ভুলতা বাড়িয়ে ৬৫–৭০+ স্কোরে পৌঁছানো</div>
+        </div>
+        <div class="data-row">
+          <div><strong>ধাপ ৪: চূড়ান্ত রিভিশন</strong><br /><span class="mono">সপ্তাহ ১৫–১৬</span><br />(মার্চ ২য়–৩য় সপ্তাহ)</div>
+          <div>নতুন কোনো বই বা কোচিং শিট ধরবেন না। শুধু নিজের মিস্টেক খাতা, হিসাববিজ্ঞানের সূত্রের শিট, ব্যবস্থাপনার আইন-ধারা-তাত্ত্বিক তালিকা, বাংলা বানান ও সাহিত্য ছক এবং ইংরেজির প্রিপজিশন-ভোকাবুলারি রিভিশন দিন।</div>
+          <div>শান্ত মাথায় ও আত্মবিশ্বাস নিয়ে পরীক্ষা হলে প্রবেশ</div>
+        </div>
+      </div>
+
+      <div class="pull-quote">
+        “গুচ্ছ সি-ইউনিটে নেগেটিভ মার্কিং (−০.২৫) ঠেকানোর সোনালি নিয়ম হলো: যে প্রশ্নে ২টি অপশন নিশ্চিতভাবে বাদ দিতে পারবেন না, সেটি ছেড়ে দিন। ১০০টি দাগালে ১৫টি ভুল করার চেয়ে ৮২টি নির্ভুল দাগানো মেধাতালিকায় আপনাকে কয়েক হাজার ধাপ এগিয়ে রাখবে।”
+        <cite>— পরীক্ষার হলের ৬০ মিনিটের সময় বণ্টন: ব্যবস্থাপনা ১৫ মি. → বাংলা ৮ মি. → ইংরেজি ১০ মি. → হিসাববিজ্ঞান ২২ মি. → শেষ ৫ মি. রিচেক ও দ্বিধান্বিত প্রশ্ন।</cite>
+      </div>
+    </section>
+
+    <!-- PART 11: FINAL MASTER PRIORITY LIST & REVISION SHEET -->
+    <section id="part11" class="sec">
+      <h2>চূড়ান্ত মাস্টার প্রায়োরিটি তালিকা ও একনজরে রিভিশন শিট</h2>
+      <div class="measure">
+        <p>পরীক্ষার আগের এক সপ্তাহে দ্রুত চোখ বোলানোর জন্য চার বিষয়ের সবচেয়ে গুরুত্বপূর্ণ সূত্র, আইন, তত্ত্ব, ব্যাকরণ ও সাধারণ ভুলগুলো এক টেবিলে সংকলন করা হলো:</p>
+      </div>
+
+      <!-- TABLE 3 (Table 3 of 3): Master Revision Table -->
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>বিষয় (নম্বর)</th>
+              <th>কখনই বাদ দেবেন না (Never-Skip Topics)</th>
+              <th>অবশ্যই মনে রাখার সূত্র / আইন / নিয়ম</th>
+              <th>সাধারণ ফাঁদ ও সতর্কতা</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>হিসাববিজ্ঞান</strong><br /><span class="mono">(৩৫ নম্বর)</span></td>
+              <td>হিসাব সমীকরণ, বিপরীত হিসাব, রেওয়ামিলের ভুল, বিক্রীত পণ্যের ব্যয় ও লাভ-ক্ষতির হার, অবচয়, শেয়ার ও বোনাস শেয়ার, চলতি/ত্বরিত অনুপাত, ব্যাংক সমন্বয়, ব্যয়ের শ্রেণিবিভাগ।</td>
+              <td>• <span class="mono">A = L + OE</span> (বোনাস শেয়ারে OE অপরিবর্তিত)<br />• ক্রয়মূল্যে লাভ <em>r%</em> হলে বিক্রয়ে = <span class="mono">r/(100+r)</span><br />• বিক্রয়ে ক্ষতি <em>r%</em> হলে ব্যয়ে = <span class="mono">r/(100+r)</span><br />• বার্ষিক সরলরৈখিক অবচয় = <span class="mono">(মূল্য − ভগ্নাবশেষ) ÷ আয়ুষ্কাল</span><br />• চলতি মূলধন = চলতি সম্পদ − চলতি দায়<br />• ত্বরিত সম্পদ = চলতি সম্পদ − (সমাপনী মজুদ + অগ্রিম ব্যয়)</td>
+              <td>পুঞ্জিভূত অবচয়কে দায় ভাবা (আসলে বিপরীত সম্পদ); ট্রেজারি স্টককে সম্পদ ভাবা (বিপরীত মালিকানাস্বত্ব); অনুপার্জিত আয়কে আয় ভাবা (আসলে চলতি দায়); Sunk Cost সিদ্ধান্তে বিবেচ্য নয়।</td>
+            </tr>
+            <tr>
+              <td><strong>ব্যবস্থাপনা</strong><br /><span class="mono">(৩৫ নম্বর)</span></td>
+              <td>অংশীদারি আইন ১৯৩২, কোম্পানি আইন ১৯৯৪, সমবায় আইন ২০০১, হেনরি ফেয়লের ১৪ নীতি, টেলরের বৈজ্ঞানিক ব্যবস্থাপনা, প্রশিক্ষণ (On/Off-the-job), মাসলোর সোপান, সমন্বয় ও নিয়ন্ত্রণ, ই-ব্যাংকিং।</td>
+              <td>• অংশীদারি সদস্য: ২–২০ (ব্যাংকিংয়ে ২–১০)<br />• প্রাইভেট লিমিটেড: ২–৫০; পাবলিক লিমিটেড: ৭–শেয়ার দ্বারা সীমাবদ্ধ<br />• সমবায় সমিতি: ন্যূনতম ২০ জন (প্রাথমিক), সর্বোচ্চ সীমা নেই<br />• স্মারকলিপি = মূল সনদ; পরিমেল নিয়মাবলি = অভ্যন্তরীণ ব্যবস্থাপনা<br />• ফেয়ল = আধুনিক ব্যবস্থাপনার জনক (ফ্রান্স); টেলর = বৈজ্ঞানিক ব্যবস্থাপনা (পার্থক্যমূলক মজুরি)<br />• মূলধন বাজার নিয়ন্ত্রক = BSEC; মুদ্রানীতি = কেন্দ্রীয় ব্যাংক</td>
+              <td>স্মারকলিপি বনাম পরিমেল নিয়মাবলি গুলিয়ে ফেলা; ইন্টার্নশিপকে Off-the-job ভাবা (এটি On-the-job); 'কোনটি নয়?' প্রশ্নে 'নয়' বাদ পড়া।</td>
+            </tr>
+            <tr>
+              <td><strong>বাংলা</strong><br /><span class="mono">(১৫ নম্বর)</span></td>
+              <td>সমাস, সন্ধি, বানানের নিয়ম ও ণ-ত্ব/ষ-ত্ব বিধান, উপসর্গ, শব্দশ্রেণি, পারিভাষিক শব্দ, গদ্য-পদ্যের লেখক ও মূল গ্রন্থ, <em>লালসালু</em> ও <em>সিরাজউদ্দৌলা</em>।</td>
+              <td>• বাংলা উপসর্গ ২১টি, সংস্কৃত ২০টি<br />• মধ্যপদলোপী কর্মধারয় (আয়কর, সিংহাসন, স্মৃতিসৌধ)<br />• 'মানবকল্যাণ' → আবুল ফজলের <em>মানবতন্ত্র</em> গ্রন্থ<br />• 'বিদ্রোহী' → <em>অগ্নিবীণা</em> কাব্যগ্রন্থ (প্রেমিক ও দ্রোহী সত্তা)<br />• যুক্তবর্ণ ও প্রমিত বানান (যেমন: মরীচিকা, পিপীলিকা, সান্ত্বনা)</td>
+              <td>উপপদ তৎপুরুষ বনাম কর্মধারয় সমাসে বিভ্রান্তি; একই লেখকের দুটি গ্রন্থের নাম গুলিয়ে ফেলা।</td>
+            </tr>
+            <tr>
+              <td><strong>ইংরেজি</strong><br /><span class="mono">(১৫ নম্বর)</span></td>
+              <td>Subject-Verb Agreement, Right Form of Verbs, Voice, Narration, Preposition, Conditionals, Parts of Speech, Synonyms–Antonyms, Spelling ও EFT।</td>
+              <td>• Inversion-এ আসল Subject Verb-এর পরে থাকে (<em>Sweet are the uses...</em>)<br />• <em>Who</em>-যুক্ত Passive: <span class="mono">By whom + aux + obj + be + V3?</span><br />• <em>Each/Every/Neither/One of the + plural noun</em> → Singular Verb<br />• 3rd Conditional: <span class="mono">Had + S + V3, S + would have + V3</span></td>
+              <td>বাংলা অর্থ মিলিয়ে Preposition বসানো; Interrogative Passive-এ Auxiliary Verb-এর আগে Subject বসিয়ে দেওয়া।</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="measure">
+        <p><strong>অনুশীলনের জন্য সেরা বিগত প্রশ্নপত্রের অগ্রাধিকার ক্রম:</strong> (১) জিএসটি সি-ইউনিট ২০২১–২২ থেকে ২০২৫–২৬ (৫টি সম্পূর্ণ সেট — সর্বোচ্চ গুরুত্ব), (২) জিএসটি সি-ইউনিট ২০২০–২১ (আইসিটি বাদে ৭৫ প্রশ্ন), (৩) গুচ্ছ-পূর্ব কুমিল্লা, বরিশাল, ইসলামী ও বেগম রোকেয়া বিশ্ববিদ্যালয়ের সি-ইউনিট MCQ, (৪) জগন্নাথ বিশ্ববিদ্যালয়ের ২০১৭-পূর্ব সি-ইউনিট MCQ এবং ঢাকা বিশ্ববিদ্যালয়ের গ-ইউনিট (বিগত ৫ বছর)।</p>
+      </div>
+    </section>
+
+    <!-- SOURCES -->
+    <section id="sources" class="sec">
+      <h2>তথ্যসূত্র (Sources)</h2>
+      <ol class="sources-list">
+        <li><a href="https://www.prothomalo.com/education/admission/q8vei5aecd" target="_blank" rel="noopener noreferrer">প্রথম আলো (১২ সেপ্টেম্বর ২০২৬) — গুচ্ছ ভর্তি: যুক্ত হতে পারে নতুন কয়েকটি বিশ্ববিদ্যালয়, এবার নেতৃত্বে পবিপ্রবি</a></li>
+        <li><a href="https://thedhakadiary.com/news/31405" target="_blank" rel="noopener noreferrer">ঢাকা ডায়েরি (২১ নভেম্বর ২০২৬) — ২০২৬–২৭ গুচ্ছে ২৩ বিশ্ববিদ্যালয় চূড়ান্ত ও পরীক্ষার তারিখ অপরিবর্তিত</a></li>
+        <li><a href="https://bangla.dhakatribune.com/education/113088/%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A6%AD%E0%A7%81%E0%A6%95%E0%A7%8D%E0%A6%A4-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F%E0%A7%87-%E0%A6%86%E0%A6%B8%E0%A6%A8-%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE-%E0%A6%AC%E0%A6%BE%E0%A7%9C%E0%A6%9B%E0%A7%87" target="_blank" rel="noopener noreferrer">বাংলা ঢাকা ট্রিবিউন (১৪ নভেম্বর ২০২৬) — গুচ্ছভুক্ত বিশ্ববিদ্যালয়ে আসন সংখ্যা বাড়ছে</a></li>
+        <li><a href="https://jagobarta.com/%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B-%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF%E0%A6%B0-%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A7%83%E0%A6%A4%E0%A7%8D%E0%A6%AC%E0%A7%87-%E0%A6%AA%E0%A6%AC/" target="_blank" rel="noopener noreferrer">জাগোবার্তা (২২ নভেম্বর ২০২৬) — গুচ্ছ ভর্তির নেতৃত্বে পবিপ্রবি-নোবিপ্রবি, যুক্ত হচ্ছে ৩ বিশ্ববিদ্যালয়</a></li>
+        <li><a href="https://www.teachers.gov.bd/blog/details/854039" target="_blank" rel="noopener noreferrer">শিক্ষক বাতায়ন (Teachers' Portal) — জিএসটি গুচ্ছ ভর্তি ২০২৫–২৬ বিধিমালা ও ২০২৬–২৭ তারিখ</a></li>
+        <li><a href="https://www.prothomalo.com/education/admission/0rm6eychwi" target="_blank" rel="noopener noreferrer">প্রথম আলো (১০ ডিসেম্বর ২০২৫) — গুচ্ছভুক্ত বিশ্ববিদ্যালয়গুলোর আবেদন, পাস নম্বর ও নেগেটিভ মার্কিং</a></li>
+        <li><a href="https://www.prothomalo.com/education/admission/98g503s3dr" target="_blank" rel="noopener noreferrer">প্রথম আলো (৪ জুলাই ২০২৬) — গুচ্ছের প্রাথমিক ভর্তি, ৫,০০০ টাকা ফি ও মাইগ্রেশন নীতিমালা</a></li>
+        <li><a href="https://www.dainikshiksha.com/bn/news/cluster-c-unit-results-announced-366674" target="_blank" rel="noopener noreferrer">দৈনিক শিক্ষা (৩০ মার্চ ২০২৬) — ২০২৫–২৬ গুচ্ছ সি-ইউনিটের ফল প্রকাশ</a></li>
+        <li><a href="https://dailyasianage.com/news/349789/gst-c-unit-result-published" target="_blank" rel="noopener noreferrer">দ্য এশিয়ান এজ (৩১ মার্চ ২০২৬) — GST C-Unit Result Published (৬৬.৫০% পাস, সর্বোচ্চ ৮৫)</a></li>
+        <li><a href="https://www.dhakatribune.com/bangladesh/education/389720/hsc-2026-to-be-held-on-full-syllabus" target="_blank" rel="noopener noreferrer">ঢাকা ট্রিবিউন (২৩ আগস্ট ২০২৫) — NCTB: HSC 2026 to be held on full syllabus</a></li>
+        <li><a href="https://en.prothomalo.com/youth/education/sh7trpsb7j" target="_blank" rel="noopener noreferrer">প্রথম আলো ইংরেজি (২৩ আগস্ট ২০২৫) — HSC 2026: Exams to be held on full syllabus</a></li>
+        <li><a href="https://sattacademy.com/%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F-gst-c-%E0%A6%87%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A6%9F-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A6%BE%E0%A7%9F-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%B7-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AB%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AC-27032026/all/mcq-questions" target="_blank" rel="noopener noreferrer">স্যাট একাডেমি — জিএসটি সি-ইউনিট ২০২৫–২৬ (২৭ মার্চ ২০২৬) প্রশ্নব্যাংক ও সমাধান</a></li>
+        <li><a href="https://sattacademy.com/%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F-gst-%E0%A6%87%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A6%9F-c-%E0%A6%AC%E0%A6%BE%E0%A6%A3%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%AF-%E0%A6%B6%E0%A6%BE%E0%A6%96%E0%A6%BE-%E0%A6%B8%E0%A7%87%E0%A6%B6%E0%A6%A8-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AA-%E0%A7%A8%E0%A7%AB-25-04-2025/all/mcq-questions" target="_blank" rel="noopener noreferrer">স্যাট একাডেমি — জিএসটি সি-ইউনিট ২০২৪–২৫ (২৫ এপ্রিল ২০২৫) প্রশ্নব্যাংক ও সমাধান</a></li>
+        <li><a href="https://sattacademy.com/c-unit-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A6%BE-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%A8-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%A9-27-05-2023/all/mcq-questions" target="_blank" rel="noopener noreferrer">স্যাট একাডেমি — জিএসটি সি-ইউনিট ২০২২–২৩ (২৭ মে ২০২৩) প্রশ্নব্যাংক</a></li>
+        <li><a href="https://chorcha.net/question-bank/gst-c-unit-question-bank" target="_blank" rel="noopener noreferrer">চর্চা — জিএসটি সি-ইউনিট ও গুচ্ছ-পূর্ব বিশ্ববিদ্যালয় প্রশ্নব্যাংক আর্কাইভ</a></li>
+        <li><a href="https://www.kalerkantho.com/print-edition/first-page/2026/11/03/1761973" target="_blank" rel="noopener noreferrer">কালের কণ্ঠ (৩ নভেম্বর ২০২৬) — গুচ্ছ ভর্তির বিবর্তন ও বেরিয়ে যাওয়া বিশ্ববিদ্যালয়সমূহ</a></li>
+        <li><a href="https://www.prothomalo.com/education/admission/fyybhhtfaf" target="_blank" rel="noopener noreferrer">প্রথম আলো (৪ ডিসেম্বর ২০২৫) — গুচ্ছ থেকে বেরিয়ে যাওয়া ৫ বিশ্ববিদ্যালয়ের তালিকা</a></li>
+        <li><a href="https://www.thedailystar.net/news/education/news/university-admission-tests-2026-27-date-clashes-emerge-8-institutions-announce-schedules-4260196" target="_blank" rel="noopener noreferrer">দ্য ডেইলি স্টার — ২০২৬–২৭ বিশ্ববিদ্যালয় ভর্তি পরীক্ষার সময়সূচি</a></li>
+        <li><a href="https://www.dhakatribune.com/bangladesh/education/144364/jnu-scraps-mcq-system-in-admission-tests-other" target="_blank" rel="noopener noreferrer">ঢাকা ট্রিবিউন (এপ্রিল ২০১৮) — জগন্নাথ বিশ্ববিদ্যালয়ের গুচ্ছ-পূর্ব MCQ থেকে লিখিত পরীক্ষায় রূপান্তর</a></li>
+        <li><a href="https://www.teachers.gov.bd/blog/details/854501" target="_blank" rel="noopener noreferrer">শিক্ষক বাতায়ন — কুমিল্লা বিশ্ববিদ্যালয় সি-ইউনিট মানবণ্টন ও ভর্তি কাঠামো</a></li>
+        <li><a href="https://thedailycampus.com/admission-test/28714/%E0%A6%AC%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%BE%E0%A6%B2-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%9F-%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%81%E0%A6%A4%E0%A6%BF-%E0%A6%97-%E0%A6%87%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A6%9F" target="_blank" rel="noopener noreferrer">দ্য ডেইলি ক্যাম্পাস (সেপ্টেম্বর ২০১৯) — বরিশাল বিশ্ববিদ্যালয় গ-ইউনিট গুচ্ছ-পূর্ব মানবণ্টন</a></li>
+        <li><a href="https://studybarta.com/islamic-university-kushtia-admission-circular/" target="_blank" rel="noopener noreferrer">স্টাডিবার্তা — ইসলামী বিশ্ববিদ্যালয় (ইবি) গুচ্ছ-পূর্ব সি/জি ইউনিট কাঠামো</a></li>
+        <li><a href="https://studybarta.com/khulna-university-admission-test/" target="_blank" rel="noopener noreferrer">স্টাডিবার্তা — খুলনা বিশ্ববিদ্যালয় (খুবি) গুচ্ছ-পূর্ব সি-ইউনিট কাঠামো</a></li>
+        <li><a href="https://studybarta.com/jkkniu-admission/" target="_blank" rel="noopener noreferrer">স্টাডিবার্তা — জাককানইবি গুচ্ছ-পূর্ব সি-ইউনিট কাঠামো</a></li>
+        <li><a href="https://studybarta.com/just-admission-test-circular/" target="_blank" rel="noopener noreferrer">স্টাডিবার্তা — যবিপ্রবি (JUST) গুচ্ছ-পূর্ব F-ইউনিট কাঠামো</a></li>
+        <li><a href="https://studybarta.com/pust-admission-test/" target="_blank" rel="noopener noreferrer">স্টাডিবার্তা — পাবিপ্রবি (PUST) গুচ্ছ-পূর্ব সি-ইউনিট কাঠামো</a></li>
+        <li><a href="https://allresultbd.com/gst-admission-circular/" target="_blank" rel="noopener noreferrer">অলরেজাল্টবিডি — জিএসটি ভর্তি আবেদন ফি ও বিজ্ঞপ্তি তথ্য</a></li>
+        <li><a href="https://bn.wikipedia.org/wiki/%E0%A6%9C%E0%A6%BF%E0%A6%8F%E0%A6%B8%E0%A6%9F%E0%A6%BF_%E0%A6%97%E0%A7%81%E0%A6%9A%E0%A7%8D%E0%A6%9B_%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A6%AF%E0%A6%BC_%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF_%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE" target="_blank" rel="noopener noreferrer">বাংলা উইকিপিডিয়া — জিএসটি গুচ্ছ বিশ্ববিদ্যালয় ভর্তি পরীক্ষা (২০২০–২৫ ঐতিহাসিক পরিসংখ্যান)</a></li>
+      </ol>
+    </section>
+
+  </main>
+</body>
+</html>
+```
